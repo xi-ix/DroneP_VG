@@ -18,12 +18,6 @@ experiment/**/data/
 experiment/**/log/
 experiment/**/output/
 
-# Scripts and tests outputs
-scripts/data/
-scripts/output_images/
-test/annotations/
-test/image/
-
 # Python
 __pycache__/
 *.py[cod]
