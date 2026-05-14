@@ -1,0 +1,43 @@
+============================================================
+  Exp14 Best Config Verification (Exp13 + Sliding Window)
+============================================================
+  Config: threshold=0.08, nms=0.66
+  Checkpoint: /home/wangzhe/DroneP_VG/experiment/exp14_full_rebuild_20260421/log/exp14_full_rebuild_20260421_best.pt
+  Source 0 (Exp13): /home/wangzhe/DroneP_VG/experiment/exp13_full_rebuild_20260421/log/predictions
+  Source 1 (SW):    /home/wangzhe/DroneP_VG/experiment/exp14_full_rebuild_20260421/log/sw_predictions_cfg02
+============================================================
+[Step 1] Loading candidate records with sliding window source...
+  Records: train=70, val=15, test=15
+  Exp13 candidates: 3130
+  SW candidates:    10925
+  Total merged candidates: 14055
+  Feature dim: 9
+  Model loaded (stage=rl)
+
+[Step 2] Applying model with threshold=0.08, nms=0.66...
+  Total prediction boxes: 10251
+
+[Step 3] Evaluating on full 100 images (class-aware)...
+
+============================================================
+  VERIFICATION RESULT (Exp13 + Sliding Window)
+============================================================
+  File count:        100
+  GT boxes:          4304
+  Prediction boxes:  10251
+  Acc@0.5:           0.3081
+  Acc@0.75:          0.2405
+  mAP@0.5:           0.0540
+  Empty FP rate:     0.0000
+============================================================
+
+  COMPARISON TABLE:
+  Version                                Acc@0.5   Acc@0.75    mAP@0.5    Pred#
+  ----------------------------------- ---------- ---------- ---------- --------
+  Baseline (0.20/0.40)                    0.3083     0.2407     0.1038     3130
+  Exp14 single source (Exp13 only)        0.3083     0.2407     0.1070     3125
+  Original best (Exp13+Lab9 SW)           0.4658     0.3081     0.1430     8553
+  Current (Exp13+new SW)                  0.3081     0.2405     0.0540    10251
+============================================================
+
+[Done] Result saved to /home/wangzhe/DroneP_VG/experiment/exp14_full_rebuild_20260421/log/verify_sw_source_result.json

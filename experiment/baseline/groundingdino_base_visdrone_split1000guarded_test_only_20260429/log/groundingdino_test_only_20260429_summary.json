@@ -1,0 +1,23 @@
+{
+  "config": {
+    "dataset": "/home/wangzhe/DroneP_VG/dataset/VisDroneSplit1000Guarded",
+    "split": "test",
+    "checkpoint": "/home/wangzhe/GroundingDINO/weights/groundingdino_swint_ogc.pth",
+    "model_config": "/home/wangzhe/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+    "box_threshold": 0.2,
+    "text_threshold": 0.2,
+    "nms_threshold": 0.4
+  },
+  "metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 5801.0,
+    "acc_05": 0.36071742129687695,
+    "acc_075": 0.277938040887997,
+    "map_05": 0.12546677770652875,
+    "tp_05": 2876.0,
+    "tp_075": 2216.0
+  },
+  "pred_count_from_loop": 5801,
+  "elapsed_sec": 43.06213855743408
+}

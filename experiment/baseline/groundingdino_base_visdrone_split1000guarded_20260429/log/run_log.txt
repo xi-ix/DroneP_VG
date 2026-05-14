@@ -1,0 +1,26 @@
+[Start] GroundingDINO baseline rerun on VisDroneSplit1000Guarded
+[Step] GT conversion completed
+[Progress] 50/1000 0000109_00606_d_0000062.jpg boxes=18
+[Progress] 100/1000 0000201_00818_d_0000175.jpg boxes=38
+[Progress] 150/1000 0000272_04000_d_0000009.jpg boxes=48
+[Progress] 200/1000 0000316_01401_d_0000526.jpg boxes=47
+[Progress] 250/1000 0000366_05881_d_0000806.jpg boxes=23
+[Progress] 300/1000 9999938_00000_d_0000133.jpg boxes=30
+[Progress] 350/1000 9999938_00000_d_0000429.jpg boxes=19
+[Progress] 400/1000 9999942_00000_d_0000065.jpg boxes=58
+[Progress] 450/1000 9999945_00000_d_0000108.jpg boxes=15
+[Progress] 500/1000 9999951_00000_d_0000268.jpg boxes=39
+[Progress] 550/1000 9999952_00000_d_0000317.jpg boxes=19
+[Progress] 600/1000 9999955_00000_d_0000099.jpg boxes=30
+[Progress] 650/1000 9999960_00000_d_0000091.jpg boxes=25
+[Progress] 700/1000 9999965_00000_d_0000046.jpg boxes=82
+[Progress] 750/1000 9999973_00000_d_0000012.jpg boxes=59
+[Progress] 800/1000 9999979_00000_d_0000011.jpg boxes=28
+[Progress] 850/1000 9999984_00000_d_0000024.jpg boxes=40
+[Progress] 900/1000 9999993_00000_d_0000022.jpg boxes=86
+[Progress] 950/1000 9999998_00372_d_0000324.jpg boxes=58
+[Progress] 1000/1000 9999999_00855_d_0000391.jpg boxes=62
+[Done] images=1000 total_pred_boxes=38088
+[Done] summary_md=/home/wangzhe/DroneP_VG/experiment/baseline/groundingdino_base_visdrone_split1000guarded_20260429/log/evaluation_summary_groundingdino_base_visdrone_split1000guarded_20260429_class_aware.md
+[Done] summary_json=/home/wangzhe/DroneP_VG/experiment/baseline/groundingdino_base_visdrone_split1000guarded_20260429/log/groundingdino_base_visdrone_split1000guarded_20260429_summary.json
+[Done] elapsed_sec=208.52

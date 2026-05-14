@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "target_total": 1000,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "counts": {
+    "train": 700,
+    "val": 150,
+    "test": 150
+  },
+  "full_source_unique_stems": 8628,
+  "contains_locked_train": true,
+  "contains_locked_val": true,
+  "contains_locked_test": true
+}

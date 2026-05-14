@@ -1,0 +1,43 @@
+============================================================
+  Exp14 Best Config Verification (Dual Source)
+============================================================
+  Config: threshold=0.08, nms=0.66
+  Checkpoint: /home/wangzhe/DroneP_VG/experiment/exp14_full_rebuild_20260421/log/exp14_full_rebuild_20260421_best.pt
+  Source 0 (Exp13): /home/wangzhe/DroneP_VG/experiment/exp13_full_rebuild_20260421/log/predictions
+  Source 1 (Baseline): /home/wangzhe/DroneP_VG/experiment/baseline/groundingdino_base_refdrone100_recovered_20260421/log/predictions
+============================================================
+[Step 1] Loading candidate records with dual source...
+  Records: train=70, val=15, test=15
+  Exp13 candidates: 3130
+  Baseline candidates: 3130
+  Total merged candidates: 6260
+  Feature dim: 9
+  Model loaded (stage=rl)
+
+[Step 2] Applying model with threshold=0.08, nms=0.66...
+  Total prediction boxes: 3128
+
+[Step 3] Evaluating on full 100 images (class-aware)...
+
+============================================================
+  VERIFICATION RESULT (Dual Source: Exp13 + Baseline)
+============================================================
+  File count:        100
+  GT boxes:          4304
+  Prediction boxes:  3128
+  Acc@0.5:           0.3083
+  Acc@0.75:          0.2407
+  mAP@0.5:           0.1070
+  Empty FP rate:     0.0000
+============================================================
+
+  COMPARISON:
+  Version                           Acc@0.5   Acc@0.75    mAP@0.5    Pred#
+  ------------------------------ ---------- ---------- ---------- --------
+  Baseline (0.20/0.40)               0.3083     0.2407     0.1038     3130
+  Exp14 single source                0.3083     0.2407     0.1070     3125
+  Original best (Exp13+Lab9)         0.4658     0.3081     0.1430     8553
+  Current (Exp13+Baseline)           0.3083     0.2407     0.1070     3128
+============================================================
+
+[Done] Result saved to /home/wangzhe/DroneP_VG/experiment/exp14_full_rebuild_20260421/log/verify_dual_source_result.json

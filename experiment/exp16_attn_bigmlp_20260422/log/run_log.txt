@@ -1,0 +1,112 @@
+[Start] Exp16 attention + big-MLP scoring rebuild based on Exp14 pipeline
+[Config] data_root=/home/wangzhe/DroneP_VG/visdrone_test_100
+[Config] exp13_pred_dir=/home/wangzhe/DroneP_VG/experiment/exp13_full_rebuild_20260421/log/predictions
+[Config] sw_pred_root=/home/wangzhe/DroneP_VG/experiment/lab9_reproduce_20260421/log/predictions
+[Config] language_prompt=aerial traffic scene with roads, vehicles, and drones in sky
+[Config] split=70/15/15, SL=60 epochs, RL=40 epochs
+[Config] aligned_postprocess threshold=0.08 nms=0.66
+[SL] epoch=001/60 loss=0.803339 train_acc=0.5846 val_loss=0.842550 val_acc=0.4701
+[SL] epoch=002/60 loss=0.806427 train_acc=0.6789 val_loss=0.825570 val_acc=0.7113
+[SL] epoch=003/60 loss=0.772285 train_acc=0.6685 val_loss=0.793527 val_acc=0.7093
+[SL] epoch=004/60 loss=0.765619 train_acc=0.6854 val_loss=0.751553 val_acc=0.7155
+[SL] epoch=005/60 loss=0.716212 train_acc=0.6990 val_loss=0.701377 val_acc=0.7175
+[SL] epoch=006/60 loss=0.699400 train_acc=0.7346 val_loss=0.741178 val_acc=0.6948
+[SL] epoch=007/60 loss=0.674801 train_acc=0.7314 val_loss=0.677837 val_acc=0.7216
+[SL] epoch=008/60 loss=0.645117 train_acc=0.7398 val_loss=0.759362 val_acc=0.6639
+[SL] epoch=009/60 loss=0.637498 train_acc=0.7314 val_loss=0.703432 val_acc=0.7052
+[SL] epoch=010/60 loss=0.631542 train_acc=0.7379 val_loss=0.713803 val_acc=0.6969
+[SL] epoch=011/60 loss=0.632587 train_acc=0.7309 val_loss=0.692739 val_acc=0.7216
+[SL] epoch=012/60 loss=0.636424 train_acc=0.7421 val_loss=0.745552 val_acc=0.6784
+[SL] epoch=013/60 loss=0.651392 train_acc=0.7370 val_loss=0.694637 val_acc=0.7258
+[SL] epoch=014/60 loss=0.654809 train_acc=0.7351 val_loss=0.690972 val_acc=0.7361
+[SL] epoch=015/60 loss=0.671394 train_acc=0.7436 val_loss=0.744317 val_acc=0.6825
+[SL] epoch=016/60 loss=0.623908 train_acc=0.7271 val_loss=0.692850 val_acc=0.7320
+[SL] epoch=017/60 loss=0.620030 train_acc=0.7454 val_loss=0.726789 val_acc=0.7031
+[SL] epoch=018/60 loss=0.615373 train_acc=0.7534 val_loss=0.756566 val_acc=0.6722
+[SL] epoch=019/60 loss=0.626264 train_acc=0.7417 val_loss=0.714083 val_acc=0.7031
+[SL] epoch=020/60 loss=0.627893 train_acc=0.7407 val_loss=0.712951 val_acc=0.6948
+[SL] epoch=021/60 loss=0.645199 train_acc=0.7384 val_loss=0.707022 val_acc=0.6990
+[SL] epoch=022/60 loss=0.609485 train_acc=0.7473 val_loss=0.747797 val_acc=0.6784
+[SL] epoch=023/60 loss=0.648538 train_acc=0.7436 val_loss=0.710801 val_acc=0.7134
+[SL] epoch=024/60 loss=0.624752 train_acc=0.7253 val_loss=0.679828 val_acc=0.7361
+[SL] epoch=025/60 loss=0.624347 train_acc=0.7539 val_loss=0.750287 val_acc=0.6784
+[SL] epoch=026/60 loss=0.609781 train_acc=0.7553 val_loss=0.772070 val_acc=0.6557
+[SL] epoch=027/60 loss=0.608836 train_acc=0.7417 val_loss=0.694549 val_acc=0.7237
+[SL] epoch=028/60 loss=0.649364 train_acc=0.7496 val_loss=0.718777 val_acc=0.7093
+[SL] epoch=029/60 loss=0.597996 train_acc=0.7543 val_loss=0.747253 val_acc=0.6804
+[SL] epoch=030/60 loss=0.627986 train_acc=0.7431 val_loss=0.704060 val_acc=0.7196
+[SL] epoch=031/60 loss=0.606240 train_acc=0.7426 val_loss=0.687246 val_acc=0.7258
+[SL] epoch=032/60 loss=0.638019 train_acc=0.7454 val_loss=0.693493 val_acc=0.7340
+[SL] epoch=033/60 loss=0.619662 train_acc=0.7501 val_loss=0.717925 val_acc=0.7072
+[SL] epoch=034/60 loss=0.606974 train_acc=0.7482 val_loss=0.714737 val_acc=0.7010
+[SL] epoch=035/60 loss=0.597908 train_acc=0.7487 val_loss=0.698755 val_acc=0.7340
+[SL] epoch=036/60 loss=0.669335 train_acc=0.7548 val_loss=0.726791 val_acc=0.6887
+[SL] epoch=037/60 loss=0.583517 train_acc=0.7567 val_loss=0.731176 val_acc=0.6845
+[SL] epoch=038/60 loss=0.606436 train_acc=0.7468 val_loss=0.681700 val_acc=0.7196
+[SL] epoch=039/60 loss=0.603096 train_acc=0.7482 val_loss=0.686633 val_acc=0.7155
+[SL] epoch=040/60 loss=0.588075 train_acc=0.7571 val_loss=0.786803 val_acc=0.6515
+[SL] epoch=041/60 loss=0.592076 train_acc=0.7534 val_loss=0.701708 val_acc=0.7010
+[SL] epoch=042/60 loss=0.580185 train_acc=0.7478 val_loss=0.675842 val_acc=0.7402
+[SL] epoch=043/60 loss=0.585929 train_acc=0.7647 val_loss=0.766115 val_acc=0.6557
+[SL] epoch=044/60 loss=0.623961 train_acc=0.7628 val_loss=0.775012 val_acc=0.6474
+[SL] epoch=045/60 loss=0.581662 train_acc=0.7436 val_loss=0.703519 val_acc=0.7175
+[SL] epoch=046/60 loss=0.618981 train_acc=0.7534 val_loss=0.705797 val_acc=0.7175
+[SL] epoch=047/60 loss=0.577001 train_acc=0.7553 val_loss=0.716246 val_acc=0.7052
+[SL] epoch=048/60 loss=0.605132 train_acc=0.7496 val_loss=0.683895 val_acc=0.7237
+[SL] epoch=049/60 loss=0.597861 train_acc=0.7482 val_loss=0.688543 val_acc=0.7216
+[SL] epoch=050/60 loss=0.569835 train_acc=0.7637 val_loss=0.742942 val_acc=0.6804
+[SL] epoch=051/60 loss=0.597115 train_acc=0.7642 val_loss=0.759522 val_acc=0.6660
+[SL] epoch=052/60 loss=0.575937 train_acc=0.7595 val_loss=0.703810 val_acc=0.7258
+[SL] epoch=053/60 loss=0.560602 train_acc=0.7534 val_loss=0.691664 val_acc=0.7196
+[SL] epoch=054/60 loss=0.565764 train_acc=0.7600 val_loss=0.740908 val_acc=0.7052
+[SL] epoch=055/60 loss=0.563320 train_acc=0.7571 val_loss=0.719235 val_acc=0.7155
+[SL] epoch=056/60 loss=0.554580 train_acc=0.7534 val_loss=0.705630 val_acc=0.7216
+[SL] epoch=057/60 loss=0.563095 train_acc=0.7581 val_loss=0.702679 val_acc=0.7381
+[SL] epoch=058/60 loss=0.563568 train_acc=0.7614 val_loss=0.718917 val_acc=0.7320
+[SL] epoch=059/60 loss=0.608696 train_acc=0.7628 val_loss=0.726879 val_acc=0.7175
+[SL] epoch=060/60 loss=0.590970 train_acc=0.7600 val_loss=0.730326 val_acc=0.6969
+[RL] epoch=001/40 loss=0.013188 reward=0.3904 val_reward=0.3266 val_acc05=0.1805
+[RL] epoch=002/40 loss=0.000513 reward=0.3900 val_reward=0.3197 val_acc05=0.1940
+[RL] epoch=003/40 loss=-0.000532 reward=0.3904 val_reward=0.4447 val_acc05=0.3254
+[RL] epoch=004/40 loss=-0.000152 reward=0.3917 val_reward=0.3615 val_acc05=0.1937
+[RL] epoch=005/40 loss=0.001925 reward=0.3690 val_reward=0.3140 val_acc05=0.1615
+[RL] epoch=006/40 loss=0.000915 reward=0.3776 val_reward=0.3208 val_acc05=0.1704
+[RL] epoch=007/40 loss=0.000153 reward=0.3745 val_reward=0.3175 val_acc05=0.1630
+[RL] epoch=008/40 loss=0.000853 reward=0.3845 val_reward=0.3829 val_acc05=0.2287
+[RL] epoch=009/40 loss=-0.001480 reward=0.3826 val_reward=0.3255 val_acc05=0.2019
+[RL] epoch=010/40 loss=-0.003584 reward=0.3905 val_reward=0.4778 val_acc05=0.4287
+[RL] epoch=011/40 loss=-0.010915 reward=0.3928 val_reward=0.4611 val_acc05=0.3756
+[RL] epoch=012/40 loss=-0.017590 reward=0.3879 val_reward=0.4888 val_acc05=0.4916
+[RL] epoch=013/40 loss=-0.018541 reward=0.3963 val_reward=0.3510 val_acc05=0.2317
+[RL] epoch=014/40 loss=-0.019823 reward=0.3953 val_reward=0.3788 val_acc05=0.3046
+[RL] epoch=015/40 loss=-0.018911 reward=0.4078 val_reward=0.4183 val_acc05=0.3314
+[RL] epoch=016/40 loss=-0.019929 reward=0.3996 val_reward=0.4128 val_acc05=0.3104
+[RL] epoch=017/40 loss=-0.022709 reward=0.3926 val_reward=0.3614 val_acc05=0.2412
+[RL] epoch=018/40 loss=-0.016957 reward=0.4107 val_reward=0.4106 val_acc05=0.3247
+[RL] epoch=019/40 loss=-0.025809 reward=0.3988 val_reward=0.4098 val_acc05=0.3789
+[RL] epoch=020/40 loss=-0.022635 reward=0.3906 val_reward=0.3875 val_acc05=0.2952
+[RL] epoch=021/40 loss=-0.022866 reward=0.3909 val_reward=0.4122 val_acc05=0.3402
+[RL] epoch=022/40 loss=-0.021673 reward=0.3951 val_reward=0.3537 val_acc05=0.2376
+[RL] epoch=023/40 loss=-0.025020 reward=0.3983 val_reward=0.3330 val_acc05=0.2646
+[RL] epoch=024/40 loss=-0.025393 reward=0.3870 val_reward=0.4219 val_acc05=0.4038
+[RL] epoch=025/40 loss=-0.024877 reward=0.3914 val_reward=0.4888 val_acc05=0.4916
+[RL] epoch=026/40 loss=-0.028201 reward=0.3861 val_reward=0.4888 val_acc05=0.4916
+[RL] epoch=027/40 loss=-0.026695 reward=0.4011 val_reward=0.4888 val_acc05=0.4916
+[RL] epoch=028/40 loss=-0.030410 reward=0.3825 val_reward=0.3449 val_acc05=0.2483
+[RL] epoch=029/40 loss=-0.028052 reward=0.3874 val_reward=0.3399 val_acc05=0.2079
+[RL] epoch=030/40 loss=-0.026707 reward=0.3908 val_reward=0.4888 val_acc05=0.4916
+[RL] epoch=031/40 loss=-0.031406 reward=0.3836 val_reward=0.4803 val_acc05=0.4821
+[RL] epoch=032/40 loss=-0.028482 reward=0.3839 val_reward=0.2960 val_acc05=0.1658
+[RL] epoch=033/40 loss=-0.031181 reward=0.3747 val_reward=0.4828 val_acc05=0.4845
+[RL] epoch=034/40 loss=-0.027298 reward=0.3853 val_reward=0.4854 val_acc05=0.4861
+[RL] epoch=035/40 loss=-0.028403 reward=0.3839 val_reward=0.3056 val_acc05=0.2126
+[RL] epoch=036/40 loss=-0.030482 reward=0.3853 val_reward=0.3109 val_acc05=0.2164
+[RL] epoch=037/40 loss=-0.026784 reward=0.3910 val_reward=0.3255 val_acc05=0.2148
+[RL] epoch=038/40 loss=-0.030183 reward=0.3939 val_reward=0.2876 val_acc05=0.1594
+[RL] epoch=039/40 loss=-0.033948 reward=0.3775 val_reward=0.4839 val_acc05=0.4855
+[RL] epoch=040/40 loss=-0.024691 reward=0.3957 val_reward=0.3144 val_acc05=0.2055
+[AlignedConfig] fixed threshold=0.08 nms=0.66 (same as Exp14 local refine best)
+[Done] trainval=/home/wangzhe/DroneP_VG/experiment/exp16_attn_bigmlp_20260422/log/evaluation_summary_exp16_attn_bigmlp_trainval_class_aware.md
+[Done] test=/home/wangzhe/DroneP_VG/experiment/exp16_attn_bigmlp_20260422/log/evaluation_summary_exp16_attn_bigmlp_test_class_aware.md
+[Done] full=/home/wangzhe/DroneP_VG/experiment/exp16_attn_bigmlp_20260422/log/evaluation_summary_exp16_attn_bigmlp_full_class_aware.md
+[Done] summary=/home/wangzhe/DroneP_VG/experiment/exp16_attn_bigmlp_20260422/log/exp16_attn_bigmlp_20260422_summary.json

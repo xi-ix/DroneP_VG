@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "data_root": "/home/wangzhe/DroneP_VG/visdrone_test_100",
+  "exp13_predictions": "/home/wangzhe/DroneP_VG/experiment/exp13_full_rebuild_20260421/log/predictions",
+  "sw_predictions": "/home/wangzhe/DroneP_VG/experiment/lab9_reproduce_20260421/log/predictions",
+  "split_counts": {
+    "train": 70,
+    "val": 15,
+    "test": 15
+  },
+  "sl_best": {
+    "val_acc": 0.7422680258750916,
+    "epoch": 18
+  },
+  "rl_best": {
+    "val_objective": 0.4914859036978264,
+    "epoch": 8,
+    "val_acc05": 0.4433595542025917,
+    "val_map_proxy": 0.6037807191867074
+  },
+  "best_threshold": 0.12,
+  "best_nms": 0.4,
+  "trainval_metrics": {
+    "file_count": 15.0,
+    "gt_box_count": 511.0,
+    "prediction_box_count": 484.0,
+    "acc_05": 0.5009784735812133,
+    "acc_075": 0.3816046966731898,
+    "map_05": 0.1565072428160253,
+    "tp_05": 256.0,
+    "tp_075": 195.0
+  },
+  "test_metrics": {
+    "file_count": 15.0,
+    "gt_box_count": 631.0,
+    "prediction_box_count": 510.0,
+    "acc_05": 0.29160063391442154,
+    "acc_075": 0.25990491283676703,
+    "map_05": 0.15108347626216156,
+    "tp_05": 184.0,
+    "tp_075": 164.0
+  },
+  "full_metrics": {
+    "file_count": 100.0,
+    "gt_box_count": 4304.0,
+    "prediction_box_count": 3122.0,
+    "acc_05": 0.30808550185873607,
+    "acc_075": 0.2404739776951673,
+    "map_05": 0.10692125698028754,
+    "tp_05": 1326.0,
+    "tp_075": 1035.0
+  }
+}
