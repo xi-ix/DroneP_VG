@@ -193,3 +193,5 @@
 └── log（保存实验输出数据）
 
 不要生成在fail和baseline文件夹中，也不要在我没有要求的时候删除文件
+
+更完整的工作区级实验规范见：[WORKSPACE_EXPERIMENT_RULES.md](../WORKSPACE_EXPERIMENT_RULES.md)。

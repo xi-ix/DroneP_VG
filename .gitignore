@@ -17,6 +17,7 @@ RefDrone/
 experiment/**/data/
 experiment/**/log/
 experiment/**/output/
+scripts/output_images/
 
 # Python
 __pycache__/
