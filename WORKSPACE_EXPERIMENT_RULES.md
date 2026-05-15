@@ -27,6 +27,15 @@ experiment/<exp_name>/
 python experiment/<exp_name>/scripts/<run_script>.py
 ```
 
+开启新的正式实验，尤其是训练或长时间推理实验时，优先在 `tmux` 会话中运行，避免 SSH 断开导致任务中断。标准做法是把终端输出同时维护到实验 `log/` 目录下的单一运行日志文件，例如：
+
+```bash
+tmux new -s <exp_name>
+python experiment/<exp_name>/scripts/<run_script>.py 2>&1 | tee experiment/<exp_name>/log/run_log.txt
+```
+
+如果实验脚本内部已经写入 `log/run_log.txt`，也应保证 tmux 中的 stdout/stderr 不丢失；必要时可使用 `tee -a` 追加到同一个日志文件。
+
 ## 命名规范
 
 实验目录推荐格式：

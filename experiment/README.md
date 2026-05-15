@@ -159,6 +159,61 @@
 - 结果摘要：full Acc@0.5=0.4667、Acc@0.75=0.3124、mAP@0.5=0.1234；test Acc@0.5=0.4823、Acc@0.75=0.3264、mAP@0.5=0.1256；full prediction boxes=123000。
 - 对比结论：相比 Exp22 large（full Acc@0.5=0.3627、mAP@0.5=0.0794）明显修复；相比 Exp18 large（full Acc@0.5=0.4395、mAP@0.5=0.0962）也有提升。相比 Exp23 融合上限（full Acc@0.5=0.4650、mAP@0.5=0.1295），Acc@0.5 略高但 mAP@0.5 仍低，说明 student 学到了候选保留能力，但排序/置信度校准仍弱于直接融合。
 
+## Exp25 Ranking Loss 蒸馏消融（1000 图，2026-05-15）
+- 目录： [exp25_ranked_teacher_distill_20260515](exp25_ranked_teacher_distill_20260515)
+- 作用：在 Exp24 teacher distillation 基础上加入同图正负候选 pair ranking loss，验证显式排序约束是否改善 mAP。
+- 数据口径：直接读取 [dataset/VisDroneSplit1000Guarded](../dataset/VisDroneSplit1000Guarded)，train/val/test = 700/150/150。
+- 候选来源：Exp18 `predictions/full` + GroundingDINO baseline large `predictions`。
+- Teacher 来源：Exp23 `predictions/full`。
+- 训练目标：`BCE_gt + 0.7 * BCE_teacher + 0.5 * ranking_loss`，ranking margin=0.2。
+- 最优配置：epoch 9，threshold=0.05，NMS=0.50，val objective=0.2917。
+- 结果摘要：full Acc@0.5=0.4661、Acc@0.75=0.3110、continuous mAP@0.5=0.0945、VOC2007 11-point mAP@0.5=0.1288；full prediction boxes=123013。
+- 对比结论：VOC2007 11-point mAP 相比恢复版 Exp24 略升（0.1288 vs 0.1274），但 continuous AP 和 Acc 均下降；说明当前 ranking loss 权重/采样方式没有带来稳健主线收益，作为消融结果保留，不替代 Exp24。
+
+## Exp26 A/B 双区域上下文细化蒸馏（1000 图，2026-05-15）
+- 目录： [exp26_context_refine_dual_region_20260515](exp26_context_refine_dual_region_20260515)
+- 作用：实现“两步图像区域处理”想法：先由候选框外扩得到上下文区域 A，再由候选框中心收缩得到细化区域 B，把原几何特征、A 区域统计、B 区域统计和 B-A 差异一起输入 scorer 整合模块。
+- 数据口径：直接读取 [dataset/VisDroneSplit1000Guarded](../dataset/VisDroneSplit1000Guarded)，train/val/test = 700/150/150。
+- 候选来源：Exp18 `predictions/full` + GroundingDINO baseline large `predictions`。
+- Teacher 来源：Exp23 `predictions/full`。
+- 训练目标：沿用 Exp24 的 `BCE_gt + 0.7 * BCE_teacher`；threshold=0.05，NMS=0.50。
+- 双区域特征：A/context 为候选框 2.0x 外扩区域，B/refine 为候选框中心 0.7x 收缩区域；当前实现提取 RGB mean/std、brightness、contrast 和区域面积比例。
+- 最优配置：epoch 6，val objective=0.2951，val Acc@0.5=0.4816，val continuous mAP@0.5=0.1085。
+- 结果摘要：full Acc@0.5=0.4670、Acc@0.75=0.3124、continuous mAP@0.5=0.1015、VOC2007 11-point mAP@0.5=0.1314；full prediction boxes=122999。
+- 对比结论：该想法方向合理，VOC2007 11-point mAP 相比恢复版 Exp24 小幅提升（0.1314 vs 0.1274），但 continuous AP 基本持平；当前轻量 RGB 统计版收益有限，后续更值得尝试冻结视觉 backbone 对 A/B 区域提特征。
+
+## Exp27 语言增强 A/B 双区域上下文细化蒸馏（1000 图，2026-05-15）
+- 目录： [exp27_lang_context_refine_dual_region_20260515](exp27_lang_context_refine_dual_region_20260515)
+- 作用：在 Exp26 的 A/B 双区域图像统计基础上加入轻量语言因素，验证类别文本提示、语义分组和小目标先验能否进一步提升候选筛选。
+- 数据口径：直接读取 [dataset/VisDroneSplit1000Guarded](../dataset/VisDroneSplit1000Guarded)，train/val/test = 700/150/150。
+- 候选来源：Exp18 `predictions/full` + GroundingDINO baseline large `predictions`。
+- Teacher 来源：Exp23 `predictions/full`。
+- 新增特征：类别 prompt 稳定 hash embedding（12 维）、small-target prior、person/vehicle group prior、class-aware contrast interaction。
+- 训练目标：沿用 `BCE_gt + 0.7 * BCE_teacher`；训练后在 val split 上搜索 threshold `[0.03,0.04,0.05,0.06,0.08]` 和 NMS `[0.45,0.50,0.55,0.60]`。
+- 最优配置：epoch 11；val 后处理 threshold=0.03、NMS=0.60，val objective=0.2960。
+- 结果摘要：full Acc@0.5=0.4677、Acc@0.75=0.3121、continuous mAP@0.5=0.1001、VOC2007 11-point mAP@0.5=0.1341；full prediction boxes=123825。
+- 对比结论：相比 Exp26，full Acc@0.5 和 VOC2007 11-point mAP 小幅上升，但 continuous AP 下降；说明轻量语言/语义先验对历史 mAP 口径有帮助，但没有解决完整 precision-recall 排序问题。保留为语言增强消融，不建议替代主线。
+
+## Exp28 真 query 输入 Grounding Scorer（1000 图，2026-05-15）
+- 目录： [exp28_text_query_grounding_scorer_20260515](exp28_text_query_grounding_scorer_20260515)
+- 作用：把模型形式从固定类别先验改成真正 `image + text query + candidate boxes -> query-box score`，用 VisDrone 类别自动生成伪语言 query，跑通第一版语言定位链路。
+- 数据口径：直接读取 [dataset/VisDroneSplit1000Guarded](../dataset/VisDroneSplit1000Guarded)，train/val/test = 700/150/150。
+- 文本表示：动态 text hash feature + query semantic priors。
+- 结果摘要：full Acc@0.5=0.4676、Acc@0.75=0.3121、continuous mAP@0.5=0.1004、VOC2007 11-point mAP@0.5=0.1295；full prediction boxes=123823。
+- 对比结论：Exp28 证明了真 query 输入链路可运行，但 hash text 表达能力有限，指标没有超过 Exp26/Exp27；作为 grounding 原型保留。
+
+## Exp29 词表文本编码 + Grounding TopK 评估（1000 图，2026-05-15）
+- 目录： [exp29_vocab_text_grounding_eval_20260515](exp29_vocab_text_grounding_eval_20260515)
+- 作用：在 Exp28 基础上，用可学习词表 embedding 替代 hash text，并新增 grounding 专用评估 `query -> Top1/Top5/Top10 box Recall`。
+- 数据口径：直接读取 [dataset/VisDroneSplit1000Guarded](../dataset/VisDroneSplit1000Guarded)，train/val/test = 700/150/150。
+- 文本分支：query tokens -> Embedding(dim=32) -> mean pooling -> MLP(dim=32)，再与 A/B 图像区域特征和几何特征融合。
+- 最优配置：epoch 12；val 后处理 threshold=0.03、NMS=0.60，val objective=0.2968。
+- Detection-style 结果摘要：full Acc@0.5=0.4677、Acc@0.75=0.3123、continuous mAP@0.5=0.1025、VOC2007 11-point mAP@0.5=0.1242；full prediction boxes=123831。
+- Grounding 结果摘要：full query count=5422、Recall@1=0.2979、Recall@5=0.4825、Recall@10=0.5791、mean first hit rank=20.32。
+- 类别观察：car 表现最强（R@1=0.8482、R@10=0.9904），pedestrian 次之（R@1=0.4969、R@10=0.7640）；awning tricycle、motor、people 较弱。
+- 修正记录：初次 TopK 评估因 GT 读取器复用 6 列 prediction parser，跳过了 5 列 GT，导致 `query_count=0`；已修复 GT reader 并用 checkpoint 重算 TopK。
+- 对比结论：相比 Exp28，learnable vocab text encoder 提高了 continuous mAP（0.1025 vs 0.1004），并提供了更贴近最终目标的 grounding 指标；下一步应接入 RefDrone/AerialVG 真实语言标注或更强的预训练文本/视觉语言编码器。
+
 ## GroundingDINO baseline
 - 目录： [baseline/groundingdino_base_refdrone100_recovered_20260421](baseline/groundingdino_base_refdrone100_recovered_20260421)
 - 作用：恢复历史 100 图数据集后，重跑 GroundingDINO 基线，作为所有实验的参考点。

@@ -24,3 +24,20 @@ Run:
 python experiment/exp24_teacher_distill_exp23_to_exp22_20260513/scripts/run_exp24_teacher_distill_exp23_to_exp22_20260513.py
 ```
 
+## mAP calibration
+
+Historical Exp23/Exp24 records use VOC 2007 11-point AP for `mAP@0.5`.
+The restored scripts originally reported continuous AP as `map_05`, which is lower.
+
+Calibration:
+
+```bash
+python experiment/exp24_teacher_distill_exp23_to_exp22_20260513/scripts/calibrate_exp24_map_20260515.py
+```
+
+Restored full-set results:
+
+| case | continuous AP mAP@0.5 | VOC2007 11-point mAP@0.5 |
+| --- | ---: | ---: |
+| Exp23 teacher | 0.1021 | 0.1295 |
+| Exp24 student | 0.1016 | 0.1274 |

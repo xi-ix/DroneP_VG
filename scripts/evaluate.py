@@ -14,7 +14,7 @@ def get_filenames(directory_path):
 
 def load_data_GT(file_path):
     """
-    [x1, y1, w, h, confidence] 形式的 Ground Truth 文件
+    [ID, x1, y1, w, h, conf] 形式的 Ground Truth 文件
     返回嵌套列表，例如: [[0, 120, 30, 50], [1, 45, 60, 80]]
     """
     annotations = []
@@ -22,7 +22,6 @@ def load_data_GT(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
-                
                 if not line:
                     continue
                 
@@ -44,14 +43,33 @@ def load_data_pred(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
-                
                 if not line:
                     continue
                 
-                row = [float(x) for x in line.split(',')]
+                row = [float(x) for x in line.split(' ')]
                 
                 annotations.append(row)
         return annotations
     except FileNotFoundError:
         print("文件路径不存在")
         return []
+    
+    
+    
+def main():
+    # 示例用法
+    directory_path = 'scripts/data'
+    gt_file_path = 'scripts/test/annotations/0000021_00000_d_0000001.txt'
+    pred_file_path = 'scripts/data/0000021_00000_d_0000001.txt'
+    
+    filenames = get_filenames(directory_path)
+    print("文件列表:", filenames)
+    
+    # gt_data = load_data_GT(gt_file_path)
+    # print("Ground Truth 数据:", gt_data)
+    
+    pred_data = load_data_pred(pred_file_path)
+    print("预测数据:", pred_data)
+
+if __name__ == "__main__":
+    main()

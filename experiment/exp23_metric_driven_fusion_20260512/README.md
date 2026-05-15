@@ -20,3 +20,5 @@ Run:
 python experiment/exp23_metric_driven_fusion_20260512/scripts/run_exp23_metric_driven_fusion_20260512.py
 ```
 
+Historical table value `mAP@0.5=0.1295` uses VOC 2007 11-point AP.
+Continuous AP on the same restored predictions is `mAP@0.5=0.1021`.
