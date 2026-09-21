@@ -1,0 +1,40 @@
+{
+  "split": "val",
+  "transition_count": 1950,
+  "best": {
+    "epoch": 298.0,
+    "val_mean_reward": 0.05773605406284332,
+    "loss": -0.01638244464993477
+  },
+  "device": "cuda:0",
+  "state_dim": 38,
+  "oracle_action_counts_round2": {
+    "STOP": 80,
+    "ADD_GDINO_BASE": 17,
+    "ADD_PERSON": 47,
+    "ADD_PEOPLE": 4,
+    "ADD_GROUP_OF_PEOPLE": 0,
+    "ADD_TRICYCLE": 0,
+    "ADD_COVERED_TRICYCLE": 2,
+    "ADD_AWNING_TRICYCLE": 0,
+    "ADD_MOTORCYCLE": 0,
+    "ADD_MOTORBIKE": 0,
+    "ADD_SCOOTER": 0,
+    "ADD_BICYCLE": 0
+  },
+  "oracle_action_counts_round3": {
+    "STOP": 425,
+    "ADD_GDINO_BASE": 172,
+    "ADD_PERSON": 822,
+    "ADD_PEOPLE": 142,
+    "ADD_GROUP_OF_PEOPLE": 28,
+    "ADD_TRICYCLE": 23,
+    "ADD_COVERED_TRICYCLE": 48,
+    "ADD_AWNING_TRICYCLE": 0,
+    "ADD_MOTORCYCLE": 28,
+    "ADD_MOTORBIKE": 44,
+    "ADD_SCOOTER": 0,
+    "ADD_BICYCLE": 68
+  },
+  "base_exp38_match_ratio": 0.2947260886221428
+}

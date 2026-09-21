@@ -1,0 +1,38 @@
+{
+  "method": "Qwen2.5-VL dynamic prompt action space + three-round RL + Exp38 rescoring",
+  "device": "cuda:0",
+  "llm_model": "Qwen2.5-VL-3B-Instruct",
+  "prompt_cache": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/llm_dynamic/llm_prompt_pools.json",
+  "checkpoint": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/llm_dynamic/dynamic_prompt_policy.pt",
+  "action_counts": {
+    "person": 48,
+    "bicycle": 7,
+    "people": 28,
+    "STOP": 157,
+    "gdino_base": 57,
+    "tricycle": 1,
+    "motorcycle": 2
+  },
+  "query_base_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 22298.0,
+    "tp_05": 3708.0,
+    "tp_075": 2496.0,
+    "acc_05": 0.46506960993352564,
+    "acc_075": 0.31305656590994607,
+    "map_05": 0.13428721728831167
+  },
+  "test_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 35869.0,
+    "tp_05": 3990.0,
+    "tp_075": 2590.0,
+    "acc_05": 0.5004389815627743,
+    "acc_075": 0.32484635645302895,
+    "map_05": 0.14244694494359464
+  },
+  "trace_path": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/llm_dynamic/closed_loop_trace.json",
+  "prediction_dir": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/llm_dynamic/predictions"
+}

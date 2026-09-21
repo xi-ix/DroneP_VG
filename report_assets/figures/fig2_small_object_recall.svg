@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820">
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrowSoft" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      svg { background: #fbfcff; }
+      .title { font: 700 36px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #111827; }
+      .panelTitle { font: 700 27px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #111827; }
+      .label { font: 700 26px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #111827; }
+      .text { font: 22px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #111827; }
+      .small { font: 20px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .note { font: 700 22px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #b91c1c; }
+      .badgeText { font: 700 21px "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif; fill: #111827; }
+      .panel { fill: #f8fafc; stroke: #64748b; stroke-width: 1.8; }
+      .panelBlue { fill: #eef5ff; stroke: #64748b; stroke-width: 1.8; }
+      .panelGreen { fill: #effaf3; stroke: #64748b; stroke-width: 1.8; }
+      .panelWarm { fill: #fff7ed; stroke: #64748b; stroke-width: 1.8; }
+      .box { fill: #ffffff; stroke: #334155; stroke-width: 2; }
+      .boxBlue { fill: #eef5ff; stroke: #2563eb; stroke-width: 2; }
+      .boxGreen { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
+      .boxWarm { fill: #fff7ed; stroke: #f59e0b; stroke-width: 2; }
+      .boxRed { fill: #fff1f2; stroke: #ef4444; stroke-width: 2; }
+      .boxPurple { fill: #f1efff; stroke: #6d5bd0; stroke-width: 2; }
+      .accentBlue { fill: #3b82f6; stroke: none; }
+      .accentGreen { fill: #10b981; stroke: none; }
+      .accentWarm { fill: #f59e0b; stroke: none; }
+      .accentRed { fill: #ef4444; stroke: none; }
+      .badge { fill: #ffffff; stroke: #334155; stroke-width: 1.5; }
+      .arrow { fill: none; stroke: #1f2937; stroke-width: 3; marker-end: url(#arrow); }
+      .arrowSoft { fill: none; stroke: #64748b; stroke-width: 2.4; stroke-dasharray: 8 8; marker-end: url(#arrowSoft); }
+      .thin { fill: none; stroke: #94a3b8; stroke-width: 1.6; }
+      .divider { stroke: #111827; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1600" height="820" fill="#fbfcff"/>
+  <text x="800.0" y="42" class="title" text-anchor="middle">小目标候选召回与多级别名恢复机制</text>
+  <line x1="44" y1="62" x2="1556" y2="62" class="divider"/>
+  <rect x="56" y="102" width="330" height="520" rx="8" class="panel"/>
+<circle cx="87" cy="134" r="17" class="badge"/>
+<text x="87" y="141" class="badgeText" text-anchor="middle">1</text>
+<text x="114" y="142" class="panelTitle" text-anchor="start">文本提示构建</text>
+<rect x="94" y="182" width="252" height="96" rx="8" class="box"/>
+<text x="122" y="220" class="label" text-anchor="start">原始问题</text>
+<text x="122" y="254" class="small" text-anchor="start">需要定位的目标语义</text>
+<rect x="94" y="342" width="252" height="128" rx="8" class="boxWarm"/>
+<rect x="94" y="342" width="8" height="128" rx="4" class="accentWarm"/>
+<text x="122" y="380" class="label" text-anchor="start">多级别名词表</text>
+<text x="122" y="414" class="small" text-anchor="start">基础类别</text>
+<text x="122" y="442" class="small" text-anchor="start">小目标别名</text>
+<text x="122" y="470" class="small" text-anchor="start">弱势类别映射</text>
+<rect x="430" y="102" width="342" height="520" rx="8" class="panelBlue"/>
+<circle cx="461" cy="134" r="17" class="badge"/>
+<text x="461" y="141" class="badgeText" text-anchor="middle">2</text>
+<text x="488" y="142" class="panelTitle" text-anchor="start">候选池补充</text>
+<rect x="476" y="176" width="250" height="104" rx="8" class="boxBlue"/>
+<rect x="476" y="176" width="8" height="104" rx="4" class="accentBlue"/>
+<text x="504" y="214" class="label" text-anchor="start">基础候选源</text>
+<text x="504" y="248" class="small" text-anchor="start">常规类别提示生成</text>
+<rect x="476" y="340" width="250" height="104" rx="8" class="boxRed"/>
+<rect x="476" y="340" width="8" height="104" rx="4" class="accentRed"/>
+<text x="504" y="378" class="label" text-anchor="start">小目标候选源</text>
+<text x="504" y="412" class="small" text-anchor="start">别名提示扩大召回</text>
+<rect x="476" y="500" width="250" height="72" rx="8" class="box"/>
+<text x="504" y="538" class="label" text-anchor="start">候选合并</text>
+<text x="504" y="572" class="small" text-anchor="start">去重并保留来源</text>
+<rect x="816" y="102" width="342" height="520" rx="8" class="panelWarm"/>
+<circle cx="847" cy="134" r="17" class="badge"/>
+<text x="847" y="141" class="badgeText" text-anchor="middle">3</text>
+<text x="874" y="142" class="panelTitle" text-anchor="start">小目标排序</text>
+<rect x="862" y="168" width="250" height="104" rx="8" class="boxGreen"/>
+<rect x="862" y="168" width="8" height="104" rx="4" class="accentGreen"/>
+<text x="890" y="206" class="label" text-anchor="start">面积与尺度先验</text>
+<text x="890" y="240" class="small" text-anchor="start">小框不直接丢弃</text>
+<rect x="862" y="318" width="250" height="104" rx="8" class="boxPurple"/>
+<text x="890" y="356" class="label" text-anchor="start">语义一致性</text>
+<text x="890" y="390" class="small" text-anchor="start">查询匹配 / 别名匹配</text>
+<rect x="862" y="486" width="250" height="72" rx="8" class="box"/>
+<text x="890" y="524" class="label" text-anchor="start">候选压缩</text>
+<text x="890" y="558" class="small" text-anchor="start">按可靠性重排</text>
+<rect x="1202" y="102" width="342" height="520" rx="8" class="panelGreen"/>
+<circle cx="1233" cy="134" r="17" class="badge"/>
+<text x="1233" y="141" class="badgeText" text-anchor="middle">4</text>
+<text x="1260" y="142" class="panelTitle" text-anchor="start">结果恢复</text>
+<rect x="1248" y="190" width="250" height="104" rx="8" class="boxGreen"/>
+<rect x="1248" y="190" width="8" height="104" rx="4" class="accentGreen"/>
+<text x="1276" y="228" class="label" text-anchor="start">弱小类恢复</text>
+<text x="1276" y="262" class="small" text-anchor="start">person / pedestrian</text>
+<text x="1276" y="290" class="small" text-anchor="start">vehicle / van 等</text>
+<rect x="1248" y="388" width="250" height="104" rx="8" class="box"/>
+<text x="1276" y="426" class="label" text-anchor="start">最终候选框</text>
+<text x="1276" y="460" class="small" text-anchor="start">提升小目标召回</text>
+<text x="1276" y="488" class="small" text-anchor="start">控制总预测框数量</text>
+<path d="M346,230 L476,228" class="arrow"/>
+<path d="M346,406 L476,392" class="arrow"/>
+<path d="M601,280 L601,340" class="arrow"/>
+<path d="M601,444 L601,500" class="arrow"/>
+<path d="M726,536 L862,220" class="arrow"/>
+<path d="M726,536 L862,370" class="arrow"/>
+<path d="M987,272 L987,318" class="arrow"/>
+<path d="M987,422 L987,486" class="arrow"/>
+<path d="M1112,522 L1248,242" class="arrow"/>
+<path d="M1112,522 L1248,440" class="arrow"/>
+<path d="M1498,242 L1530,242 L1530,610 L601,610 L601,574" class="arrowSoft"/>
+<text x="1050" y="724" class="note" text-anchor="middle">核心思想：从候选阶段补回可能漏检的小目标，而不是只在后处理加分</text>
+</svg>

@@ -1,0 +1,46 @@
+{
+  "conf_threshold": 0.3,
+  "iou_threshold": 0.5,
+  "samples": [
+    {
+      "image": "0000021_00000_d_0000001.jpg",
+      "gt": 31,
+      "pred": 23,
+      "visualizations": {
+        "gt_annotations": "/home/wangzhe/DroneP_VG/scripts/demo_output/0000021_00000_d_0000001_01_gt_annotations.jpg",
+        "model_predictions": "/home/wangzhe/DroneP_VG/scripts/demo_output/0000021_00000_d_0000001_02_model_predictions.jpg",
+        "evaluation_matches": "/home/wangzhe/DroneP_VG/scripts/demo_output/0000021_00000_d_0000001_03_evaluation_matches.jpg"
+      },
+      "tp": 5,
+      "fp": 18,
+      "fn": 26,
+      "precision": 0.21739130434782608,
+      "recall": 0.16129032258064516,
+      "f1": 0.18518518518518517
+    },
+    {
+      "image": "0000040_03288_d_0000069.jpg",
+      "gt": 42,
+      "pred": 62,
+      "visualizations": {
+        "gt_annotations": "/home/wangzhe/DroneP_VG/scripts/demo_output/0000040_03288_d_0000069_01_gt_annotations.jpg",
+        "model_predictions": "/home/wangzhe/DroneP_VG/scripts/demo_output/0000040_03288_d_0000069_02_model_predictions.jpg",
+        "evaluation_matches": "/home/wangzhe/DroneP_VG/scripts/demo_output/0000040_03288_d_0000069_03_evaluation_matches.jpg"
+      },
+      "tp": 31,
+      "fp": 31,
+      "fn": 11,
+      "precision": 0.5,
+      "recall": 0.7380952380952381,
+      "f1": 0.5961538461538461
+    }
+  ],
+  "overall": {
+    "tp": 36,
+    "fp": 49,
+    "fn": 37,
+    "precision": 0.4235294117647059,
+    "recall": 0.4931506849315068,
+    "f1": 0.45569620253164556
+  }
+}

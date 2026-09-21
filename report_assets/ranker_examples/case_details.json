@@ -1,0 +1,798 @@
+[
+  {
+    "case": 1,
+    "stem": "0000087_01580_d_0000005",
+    "description": "误检 Top-1 被抑制，高质量行人框整体前移",
+    "candidate_count": 487,
+    "before": [
+      {
+        "rank": 1,
+        "source_index": 0,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.984858,
+        "iou": 0.0,
+        "high_quality": false,
+        "box_xyxy": [
+          83.91,
+          352.91,
+          108.28,
+          395.48
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 2,
+        "source_index": 1,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.948487,
+        "iou": 0.928226,
+        "high_quality": true,
+        "box_xyxy": [
+          339.06,
+          315.35,
+          378.5,
+          389.51
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 3,
+        "source_index": 2,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.913736,
+        "iou": 0.0,
+        "high_quality": false,
+        "box_xyxy": [
+          100.07,
+          363.03,
+          135.65,
+          403.79
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 4,
+        "source_index": 3,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.897753,
+        "iou": 0.852364,
+        "high_quality": true,
+        "box_xyxy": [
+          465.17,
+          281.95,
+          491.88,
+          344.34
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 5,
+        "source_index": 4,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.889003,
+        "iou": 0.896536,
+        "high_quality": true,
+        "box_xyxy": [
+          27.24,
+          219.71,
+          44.67,
+          265.16
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      }
+    ],
+    "after": [
+      {
+        "rank": 1,
+        "source_index": 100,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.863641,
+        "iou": 0.834096,
+        "high_quality": true,
+        "box_xyxy": [
+          526.08,
+          223.29,
+          545.74,
+          277.01
+        ],
+        "query": "pedestrian",
+        "source_prompt": "people",
+        "source_type": "alias",
+        "before_rank": 101
+      },
+      {
+        "rank": 2,
+        "source_index": 467,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.861064,
+        "iou": 0.770269,
+        "high_quality": true,
+        "box_xyxy": [
+          404.52,
+          261.22,
+          424.01,
+          318.86
+        ],
+        "query": "pedestrian",
+        "source_prompt": "people",
+        "source_type": "alias",
+        "before_rank": 468
+      },
+      {
+        "rank": 3,
+        "source_index": 419,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.855938,
+        "iou": 0.764705,
+        "high_quality": true,
+        "box_xyxy": [
+          209.52,
+          201.75,
+          223.96,
+          246.13
+        ],
+        "query": "pedestrian",
+        "source_prompt": "person",
+        "source_type": "alias",
+        "before_rank": 420
+      },
+      {
+        "rank": 4,
+        "source_index": 372,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.848175,
+        "iou": 0.873029,
+        "high_quality": true,
+        "box_xyxy": [
+          610.87,
+          177.23,
+          626.58,
+          215.98
+        ],
+        "query": "pedestrian",
+        "source_prompt": "people",
+        "source_type": "alias",
+        "before_rank": 373
+      },
+      {
+        "rank": 5,
+        "source_index": 399,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.826955,
+        "iou": 0.876338,
+        "high_quality": true,
+        "box_xyxy": [
+          581.48,
+          180.99,
+          596.62,
+          219.63
+        ],
+        "query": "pedestrian",
+        "source_prompt": "person",
+        "source_type": "alias",
+        "before_rank": 400
+      }
+    ],
+    "before_top5_quality_count": 3,
+    "after_top5_quality_count": 5,
+    "before_top5_mean_iou": 0.535425,
+    "after_top5_mean_iou": 0.823687
+  },
+  {
+    "case": 2,
+    "stem": "0000293_03601_d_0000940",
+    "description": "错误行人框退出榜首，汽车真框占据 Top-5",
+    "candidate_count": 771,
+    "before": [
+      {
+        "rank": 1,
+        "source_index": 0,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.998821,
+        "iou": 0.0,
+        "high_quality": false,
+        "box_xyxy": [
+          15.55,
+          589.46,
+          43.78,
+          654.51
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 2,
+        "source_index": 1,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.994378,
+        "iou": 0.924803,
+        "high_quality": true,
+        "box_xyxy": [
+          748.47,
+          326.64,
+          788.33,
+          356.27
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 3,
+        "source_index": 2,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.993142,
+        "iou": 0.940013,
+        "high_quality": true,
+        "box_xyxy": [
+          458.56,
+          338.87,
+          498.66,
+          374.05
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 4,
+        "source_index": 3,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.992742,
+        "iou": 0.902542,
+        "high_quality": true,
+        "box_xyxy": [
+          516.08,
+          385.21,
+          558.5,
+          428.04
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 5,
+        "source_index": 4,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.990232,
+        "iou": 0.942112,
+        "high_quality": true,
+        "box_xyxy": [
+          792.96,
+          373.71,
+          844.52,
+          411.8
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      }
+    ],
+    "after": [
+      {
+        "rank": 1,
+        "source_index": 5,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.916122,
+        "iou": 0.898797,
+        "high_quality": true,
+        "box_xyxy": [
+          883.87,
+          484.62,
+          967.63,
+          545.01
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 6
+      },
+      {
+        "rank": 2,
+        "source_index": 7,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.91357,
+        "iou": 0.925661,
+        "high_quality": true,
+        "box_xyxy": [
+          1037.14,
+          545.43,
+          1148.27,
+          620.5
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 8
+      },
+      {
+        "rank": 3,
+        "source_index": 1,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.90417,
+        "iou": 0.924803,
+        "high_quality": true,
+        "box_xyxy": [
+          748.47,
+          326.64,
+          788.33,
+          356.27
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 2
+      },
+      {
+        "rank": 4,
+        "source_index": 4,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.903785,
+        "iou": 0.942112,
+        "high_quality": true,
+        "box_xyxy": [
+          792.96,
+          373.71,
+          844.52,
+          411.8
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 5
+      },
+      {
+        "rank": 5,
+        "source_index": 2,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.903064,
+        "iou": 0.940013,
+        "high_quality": true,
+        "box_xyxy": [
+          458.56,
+          338.87,
+          498.66,
+          374.05
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 3
+      }
+    ],
+    "before_top5_quality_count": 4,
+    "after_top5_quality_count": 5,
+    "before_top5_mean_iou": 0.741894,
+    "after_top5_mean_iou": 0.926277
+  },
+  {
+    "case": 3,
+    "stem": "9999972_00000_d_0000104",
+    "description": "靠后的高质量面包车框进入 Top-5",
+    "candidate_count": 447,
+    "before": [
+      {
+        "rank": 1,
+        "source_index": 0,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.954732,
+        "iou": 0.876984,
+        "high_quality": true,
+        "box_xyxy": [
+          1677.48,
+          94.87,
+          1749.73,
+          124.69
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 2,
+        "source_index": 1,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.910948,
+        "iou": 0.774828,
+        "high_quality": true,
+        "box_xyxy": [
+          1710.02,
+          125.63,
+          1784.22,
+          161.11
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 3,
+        "source_index": 2,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.717558,
+        "iou": 0.559851,
+        "high_quality": true,
+        "box_xyxy": [
+          267.83,
+          81.51,
+          307.61,
+          105.18
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 4,
+        "source_index": 3,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.703079,
+        "iou": 0.0,
+        "high_quality": false,
+        "box_xyxy": [
+          38.28,
+          690.85,
+          88.16,
+          739.85
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 5,
+        "source_index": 4,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.699172,
+        "iou": 0.0,
+        "high_quality": false,
+        "box_xyxy": [
+          1812.67,
+          128.07,
+          1914.74,
+          172.84
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      }
+    ],
+    "after": [
+      {
+        "rank": 1,
+        "source_index": 0,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.779604,
+        "iou": 0.876984,
+        "high_quality": true,
+        "box_xyxy": [
+          1677.48,
+          94.87,
+          1749.73,
+          124.69
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 1
+      },
+      {
+        "rank": 2,
+        "source_index": 1,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.709877,
+        "iou": 0.774828,
+        "high_quality": true,
+        "box_xyxy": [
+          1710.02,
+          125.63,
+          1784.22,
+          161.11
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 2
+      },
+      {
+        "rank": 3,
+        "source_index": 2,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.392064,
+        "iou": 0.559851,
+        "high_quality": true,
+        "box_xyxy": [
+          267.83,
+          81.51,
+          307.61,
+          105.18
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 3
+      },
+      {
+        "rank": 4,
+        "source_index": 5,
+        "class_id": 4,
+        "class_name": "汽车",
+        "score": 0.379166,
+        "iou": 0.255029,
+        "high_quality": false,
+        "box_xyxy": [
+          249.42,
+          94.64,
+          291.07,
+          123.92
+        ],
+        "query": "car",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 6
+      },
+      {
+        "rank": 5,
+        "source_index": 9,
+        "class_id": 5,
+        "class_name": "面包车",
+        "score": 0.358041,
+        "iou": 0.853028,
+        "high_quality": true,
+        "box_xyxy": [
+          1528.69,
+          57.28,
+          1583.57,
+          86.41
+        ],
+        "query": "van",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 10
+      }
+    ],
+    "before_top5_quality_count": 3,
+    "after_top5_quality_count": 4,
+    "before_top5_mean_iou": 0.442333,
+    "after_top5_mean_iou": 0.663944
+  },
+  {
+    "case": 4,
+    "stem": "9999955_00000_d_0000034",
+    "description": "低质量人群框被替换，行人框排序更集中",
+    "candidate_count": 364,
+    "before": [
+      {
+        "rank": 1,
+        "source_index": 0,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.833476,
+        "iou": 0.782462,
+        "high_quality": true,
+        "box_xyxy": [
+          1038.06,
+          250.95,
+          1058.38,
+          295.36
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 2,
+        "source_index": 1,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.746515,
+        "iou": 0.909565,
+        "high_quality": true,
+        "box_xyxy": [
+          909.57,
+          441.2,
+          936.03,
+          485.62
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 3,
+        "source_index": 2,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.702403,
+        "iou": 0.926562,
+        "high_quality": true,
+        "box_xyxy": [
+          772.42,
+          462.19,
+          795.03,
+          516.2
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      },
+      {
+        "rank": 4,
+        "source_index": 3,
+        "class_id": 2,
+        "class_name": "人群",
+        "score": 0.666894,
+        "iou": 0.0,
+        "high_quality": false,
+        "box_xyxy": [
+          256.17,
+          424.77,
+          274.99,
+          452.79
+        ],
+        "query": "group of people",
+        "source_prompt": "people",
+        "source_type": "alias"
+      },
+      {
+        "rank": 5,
+        "source_index": 4,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.663283,
+        "iou": 0.833281,
+        "high_quality": true,
+        "box_xyxy": [
+          1035.19,
+          348.9,
+          1062.07,
+          382.99
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base"
+      }
+    ],
+    "after": [
+      {
+        "rank": 1,
+        "source_index": 70,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.739258,
+        "iou": 0.829314,
+        "high_quality": true,
+        "box_xyxy": [
+          1049.24,
+          401.78,
+          1081.17,
+          444.32
+        ],
+        "query": "pedestrian",
+        "source_prompt": "people",
+        "source_type": "alias",
+        "before_rank": 71
+      },
+      {
+        "rank": 2,
+        "source_index": 332,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.711181,
+        "iou": 0.832191,
+        "high_quality": true,
+        "box_xyxy": [
+          298.45,
+          293.01,
+          321.39,
+          344.17
+        ],
+        "query": "pedestrian",
+        "source_prompt": "person",
+        "source_type": "alias",
+        "before_rank": 333
+      },
+      {
+        "rank": 3,
+        "source_index": 216,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.673845,
+        "iou": 0.802543,
+        "high_quality": true,
+        "box_xyxy": [
+          665.57,
+          217.86,
+          679.9,
+          253.88
+        ],
+        "query": "pedestrian",
+        "source_prompt": "person",
+        "source_type": "alias",
+        "before_rank": 217
+      },
+      {
+        "rank": 4,
+        "source_index": 0,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.667229,
+        "iou": 0.782462,
+        "high_quality": true,
+        "box_xyxy": [
+          1038.06,
+          250.95,
+          1058.38,
+          295.36
+        ],
+        "query": "pedestrian",
+        "source_prompt": "gdino_base",
+        "source_type": "base",
+        "before_rank": 1
+      },
+      {
+        "rank": 5,
+        "source_index": 284,
+        "class_id": 1,
+        "class_name": "行人",
+        "score": 0.614678,
+        "iou": 0.829062,
+        "high_quality": true,
+        "box_xyxy": [
+          317.75,
+          297.39,
+          337.28,
+          336.6
+        ],
+        "query": "pedestrian",
+        "source_prompt": "people",
+        "source_type": "alias",
+        "before_rank": 285
+      }
+    ],
+    "before_top5_quality_count": 4,
+    "after_top5_quality_count": 5,
+    "before_top5_mean_iou": 0.690374,
+    "after_top5_mean_iou": 0.815115
+  }
+]

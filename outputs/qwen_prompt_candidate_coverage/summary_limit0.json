@@ -1,0 +1,65 @@
+{
+  "split": "test",
+  "image_count": 150,
+  "cover_iou": 0.5,
+  "dedup_iou": 0.92,
+  "prompt_cache": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/llm_dynamic/llm_prompt_pools.json",
+  "metrics": {
+    "query_only": {
+      "file_count": 150.0,
+      "candidate_count": 9413.0,
+      "gt_count": 7973.0,
+      "covered_gt": 3072.0,
+      "coverage": 0.3853003888122413
+    },
+    "query_alias": {
+      "file_count": 150.0,
+      "candidate_count": 22392.0,
+      "gt_count": 7973.0,
+      "covered_gt": 3517.0,
+      "coverage": 0.44111375893641036
+    },
+    "qwen_dynamic_rl": {
+      "file_count": 150.0,
+      "candidate_count": 35869.0,
+      "gt_count": 7973.0,
+      "covered_gt": 4017.0,
+      "coverage": 0.5038254107613195
+    },
+    "qwen_query_base": {
+      "file_count": 150.0,
+      "candidate_count": 22298.0,
+      "gt_count": 7973.0,
+      "covered_gt": 3733.0,
+      "coverage": 0.4682051925247711
+    },
+    "qwen_prompts_one_batch": {
+      "file_count": 150.0,
+      "candidate_count": 1585.0,
+      "gt_count": 7973.0,
+      "covered_gt": 217.0,
+      "coverage": 0.027216856892010536
+    },
+    "qwen_prompts_split": {
+      "file_count": 150.0,
+      "candidate_count": 117499.0,
+      "gt_count": 7973.0,
+      "covered_gt": 2885.0,
+      "coverage": 0.3618462310297253
+    },
+    "query_only_union_qwen_prompts_one_batch": {
+      "file_count": 150.0,
+      "candidate_count": 10837.0,
+      "gt_count": 7973.0,
+      "covered_gt": 3174.0,
+      "coverage": 0.39809356578452276
+    },
+    "query_only_union_qwen_prompts_split": {
+      "file_count": 150.0,
+      "candidate_count": 124492.0,
+      "gt_count": 7973.0,
+      "covered_gt": 4084.0,
+      "coverage": 0.5122287721058573
+    }
+  }
+}

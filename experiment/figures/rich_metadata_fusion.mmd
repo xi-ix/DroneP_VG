@@ -1,0 +1,12 @@
+flowchart LR
+  A["候选元信息 JSONL"] --> B["分数特征<br/>gdino_score / query_match_score / alias score"]
+  A --> C["来源特征<br/>source_type / source_prompt / source_class_id"]
+  A --> D["几何特征<br/>area_ratio / box size / position / rank"]
+  A --> E["小目标先验<br/>small_area_bonus / hierarchy"]
+  B --> F["统一融合器"]
+  C --> F
+  D --> F
+  E --> F
+  F --> G["fused final_score"]
+  G --> H["Class-aware NMS + TopK"]
+  H --> I["最终预测结果"]

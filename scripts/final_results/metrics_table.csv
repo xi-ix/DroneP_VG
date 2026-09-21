@@ -1,0 +1,2 @@
+experiment,file_count,gt_box_count,prediction_box_count,acc_05,acc_075,map_05
+inspection_demo,2,73,138,0.602740,0.506849,0.245338

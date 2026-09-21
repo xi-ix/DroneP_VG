@@ -1,0 +1,5820 @@
+{
+  "experiment": "qwen_dynamic_rl_performance_cost",
+  "protocol": {
+    "split": "VisDroneSplit1000Guarded/test",
+    "images": 150,
+    "full_baseline": "execute every unique mapped source in each image's cached Qwen output",
+    "shared_pipeline": "same initial candidates, merge/dedup, rich-metadata rescoring, class-aware evaluator"
+  },
+  "results": {
+    "query_only": {
+      "prediction_boxes": 22298.0,
+      "acc_05": 0.46506960993352564,
+      "acc_075": 0.31305656590994607,
+      "map_05": 0.13428721728831167,
+      "small_final_recall_05": 0.3290529695024077,
+      "actions_per_image": 0.0
+    },
+    "all_qwen_mapped_actions": {
+      "prediction_boxes": 50895.0,
+      "acc_05": 0.517998244073749,
+      "acc_075": 0.33362598770851626,
+      "map_05": 0.14653646103916926,
+      "small_final_recall_05": 0.39285714285714285,
+      "actions_per_image": 2.46
+    },
+    "qwen_dynamic_rl": {
+      "prediction_boxes": 35869.0,
+      "acc_05": 0.5004389815627743,
+      "acc_075": 0.32484635645302895,
+      "map_05": 0.14244694494359464,
+      "small_final_recall_05": 0.37319422150882825,
+      "actions_per_image": 0.9533333333333334
+    }
+  },
+  "derived": {
+    "rl_acc_gain_over_query_pp": 3.536937162924869,
+    "rl_map_gain_over_query": 0.008159727655282972,
+    "rl_small_recall_gain_over_query_pp": 4.414125200642055,
+    "rl_retained_acc_gain_pct": 66.82464454976292,
+    "rl_action_reduction_vs_full_pct": 61.24661246612466,
+    "rl_box_reduction_vs_full_pct": 29.52352883387366
+  },
+  "traces": {
+    "query_only": [
+      {
+        "stem": "0000021_00000_d_0000001",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          97,
+          97,
+          97
+        ],
+        "final_count": 96
+      },
+      {
+        "stem": "0000040_03288_d_0000069",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          159,
+          159,
+          159
+        ],
+        "final_count": 153
+      },
+      {
+        "stem": "0000072_07660_d_0000012",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          174,
+          174,
+          174
+        ],
+        "final_count": 172
+      },
+      {
+        "stem": "0000074_13313_d_0000026",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          249,
+          249,
+          249
+        ],
+        "final_count": 249
+      },
+      {
+        "stem": "0000074_15793_d_0000031",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          196,
+          196,
+          196
+        ],
+        "final_count": 196
+      },
+      {
+        "stem": "0000087_01580_d_0000005",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          206,
+          206,
+          206
+        ],
+        "final_count": 204
+      },
+      {
+        "stem": "0000103_03349_d_0000031",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          65,
+          65,
+          65
+        ],
+        "final_count": 64
+      },
+      {
+        "stem": "0000103_03738_d_0000032",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          67,
+          67,
+          67
+        ],
+        "final_count": 67
+      },
+      {
+        "stem": "0000113_00814_d_0000076",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          95,
+          95,
+          95
+        ],
+        "final_count": 95
+      },
+      {
+        "stem": "0000134_01332_d_0000146",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          281,
+          281,
+          281
+        ],
+        "final_count": 272
+      },
+      {
+        "stem": "0000140_02477_d_0000006",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          318,
+          318,
+          318
+        ],
+        "final_count": 306
+      },
+      {
+        "stem": "0000152_02214_d_0000150",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          169,
+          169,
+          169
+        ],
+        "final_count": 166
+      },
+      {
+        "stem": "0000167_01384_d_0000131",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          158,
+          158,
+          158
+        ],
+        "final_count": 156
+      },
+      {
+        "stem": "0000170_00801_d_0000001",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          157,
+          157,
+          157
+        ],
+        "final_count": 155
+      },
+      {
+        "stem": "0000173_00401_d_0000001",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          113,
+          113,
+          113
+        ],
+        "final_count": 113
+      },
+      {
+        "stem": "0000180_00000_d_0000019",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          56,
+          56,
+          56
+        ],
+        "final_count": 56
+      },
+      {
+        "stem": "0000193_01705_d_0000112",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          296,
+          296,
+          296
+        ],
+        "final_count": 291
+      },
+      {
+        "stem": "0000198_01629_d_0000160",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          108,
+          108,
+          108
+        ],
+        "final_count": 108
+      },
+      {
+        "stem": "0000207_00700_d_0000008",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          163,
+          163,
+          163
+        ],
+        "final_count": 160
+      },
+      {
+        "stem": "0000239_06950_d_0000018",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          107,
+          107,
+          107
+        ],
+        "final_count": 105
+      },
+      {
+        "stem": "0000242_04600_d_0000014",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          121,
+          121,
+          121
+        ],
+        "final_count": 115
+      },
+      {
+        "stem": "0000257_03360_d_0000058",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          102,
+          102,
+          102
+        ],
+        "final_count": 96
+      },
+      {
+        "stem": "0000257_03864_d_0000062",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          82,
+          82,
+          82
+        ],
+        "final_count": 77
+      },
+      {
+        "stem": "0000260_01609_d_0000109",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          103,
+          103,
+          103
+        ],
+        "final_count": 102
+      },
+      {
+        "stem": "0000276_05601_d_0000535",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          61,
+          61,
+          61
+        ],
+        "final_count": 61
+      },
+      {
+        "stem": "0000293_03601_d_0000940",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          251,
+          251,
+          251
+        ],
+        "final_count": 241
+      },
+      {
+        "stem": "0000299_03500_d_0000104",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          160,
+          160,
+          160
+        ],
+        "final_count": 158
+      },
+      {
+        "stem": "0000309_03801_d_0000352",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          189,
+          189,
+          189
+        ],
+        "final_count": 182
+      },
+      {
+        "stem": "0000313_05401_d_0000463",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          103,
+          103,
+          103
+        ],
+        "final_count": 102
+      },
+      {
+        "stem": "0000314_01000_d_0000144",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          106,
+          106,
+          106
+        ],
+        "final_count": 104
+      },
+      {
+        "stem": "0000320_00750_d_0000007",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          131,
+          131,
+          131
+        ],
+        "final_count": 129
+      },
+      {
+        "stem": "0000323_00401_d_0000634",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          175,
+          175,
+          175
+        ],
+        "final_count": 168
+      },
+      {
+        "stem": "0000323_01801_d_0000641",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          175,
+          175,
+          175
+        ],
+        "final_count": 168
+      },
+      {
+        "stem": "0000327_03601_d_0000729",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          192,
+          192,
+          192
+        ],
+        "final_count": 188
+      },
+      {
+        "stem": "0000338_01961_d_0000148",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          204,
+          204,
+          204
+        ],
+        "final_count": 198
+      },
+      {
+        "stem": "0000348_05097_d_0000432",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          309,
+          309,
+          309
+        ],
+        "final_count": 295
+      },
+      {
+        "stem": "0000353_00000_d_0000188",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          160,
+          160,
+          160
+        ],
+        "final_count": 153
+      },
+      {
+        "stem": "0000360_00981_d_0000718",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          256,
+          256,
+          256
+        ],
+        "final_count": 248
+      },
+      {
+        "stem": "0000366_04117_d_0000798",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          270,
+          270,
+          270
+        ],
+        "final_count": 264
+      },
+      {
+        "stem": "9999937_00000_d_0000007",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          126,
+          126,
+          126
+        ],
+        "final_count": 125
+      },
+      {
+        "stem": "9999937_00000_d_0000029",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          144,
+          144,
+          144
+        ],
+        "final_count": 143
+      },
+      {
+        "stem": "9999937_00000_d_0000075",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          70,
+          70,
+          70
+        ],
+        "final_count": 68
+      },
+      {
+        "stem": "9999937_00000_d_0000129",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          245,
+          245,
+          245
+        ],
+        "final_count": 244
+      },
+      {
+        "stem": "9999937_00000_d_0000215",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          219,
+          219,
+          219
+        ],
+        "final_count": 214
+      },
+      {
+        "stem": "9999938_00000_d_0000021",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          129,
+          129,
+          129
+        ],
+        "final_count": 129
+      },
+      {
+        "stem": "9999938_00000_d_0000073",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          211,
+          211,
+          211
+        ],
+        "final_count": 211
+      },
+      {
+        "stem": "9999938_00000_d_0000079",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          149,
+          149,
+          149
+        ],
+        "final_count": 148
+      },
+      {
+        "stem": "9999938_00000_d_0000080",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          149,
+          149,
+          149
+        ],
+        "final_count": 149
+      },
+      {
+        "stem": "9999938_00000_d_0000168",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          113,
+          113,
+          113
+        ],
+        "final_count": 109
+      },
+      {
+        "stem": "9999938_00000_d_0000189",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          153,
+          153,
+          153
+        ],
+        "final_count": 153
+      },
+      {
+        "stem": "9999938_00000_d_0000190",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          141,
+          141,
+          141
+        ],
+        "final_count": 139
+      },
+      {
+        "stem": "9999938_00000_d_0000201",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          119,
+          119,
+          119
+        ],
+        "final_count": 119
+      },
+      {
+        "stem": "9999938_00000_d_0000249",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          172,
+          172,
+          172
+        ],
+        "final_count": 169
+      },
+      {
+        "stem": "9999938_00000_d_0000251",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          110,
+          110,
+          110
+        ],
+        "final_count": 110
+      },
+      {
+        "stem": "9999938_00000_d_0000257",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          159,
+          159,
+          159
+        ],
+        "final_count": 154
+      },
+      {
+        "stem": "9999938_00000_d_0000259",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          170,
+          170,
+          170
+        ],
+        "final_count": 168
+      },
+      {
+        "stem": "9999938_00000_d_0000310",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          201,
+          201,
+          201
+        ],
+        "final_count": 199
+      },
+      {
+        "stem": "9999938_00000_d_0000366",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          79,
+          79,
+          79
+        ],
+        "final_count": 79
+      },
+      {
+        "stem": "9999938_00000_d_0000413",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          93,
+          93,
+          93
+        ],
+        "final_count": 92
+      },
+      {
+        "stem": "9999940_00000_d_0000069",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          162,
+          162,
+          162
+        ],
+        "final_count": 161
+      },
+      {
+        "stem": "9999940_00000_d_0000089",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          123,
+          123,
+          123
+        ],
+        "final_count": 119
+      },
+      {
+        "stem": "9999941_00000_d_0000001",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          121,
+          121,
+          121
+        ],
+        "final_count": 121
+      },
+      {
+        "stem": "9999941_00000_d_0000004",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          142,
+          142,
+          142
+        ],
+        "final_count": 140
+      },
+      {
+        "stem": "9999941_00000_d_0000024",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          109,
+          109,
+          109
+        ],
+        "final_count": 109
+      },
+      {
+        "stem": "9999942_00000_d_0000065",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          169,
+          169,
+          169
+        ],
+        "final_count": 167
+      },
+      {
+        "stem": "9999942_00000_d_0000091",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          121,
+          121,
+          121
+        ],
+        "final_count": 116
+      },
+      {
+        "stem": "9999942_00000_d_0000139",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          259,
+          259,
+          259
+        ],
+        "final_count": 252
+      },
+      {
+        "stem": "9999942_00000_d_0000142",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          145,
+          145,
+          145
+        ],
+        "final_count": 142
+      },
+      {
+        "stem": "9999942_00000_d_0000174",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          217,
+          217,
+          217
+        ],
+        "final_count": 215
+      },
+      {
+        "stem": "9999942_00000_d_0000223",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          101,
+          101,
+          101
+        ],
+        "final_count": 98
+      },
+      {
+        "stem": "9999942_00000_d_0000226",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          98,
+          98,
+          98
+        ],
+        "final_count": 94
+      },
+      {
+        "stem": "9999942_00000_d_0000230",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          122,
+          122,
+          122
+        ],
+        "final_count": 122
+      },
+      {
+        "stem": "9999942_00000_d_0000238",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          108,
+          108,
+          108
+        ],
+        "final_count": 104
+      },
+      {
+        "stem": "9999943_00000_d_0000033",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          205,
+          205,
+          205
+        ],
+        "final_count": 203
+      },
+      {
+        "stem": "9999945_00000_d_0000014",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          65,
+          65,
+          65
+        ],
+        "final_count": 65
+      },
+      {
+        "stem": "9999945_00000_d_0000057",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          123,
+          123,
+          123
+        ],
+        "final_count": 122
+      },
+      {
+        "stem": "9999945_00000_d_0000092",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          113,
+          113,
+          113
+        ],
+        "final_count": 113
+      },
+      {
+        "stem": "9999945_00000_d_0000123",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          222,
+          222,
+          222
+        ],
+        "final_count": 216
+      },
+      {
+        "stem": "9999945_00000_d_0000126",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          165,
+          165,
+          165
+        ],
+        "final_count": 161
+      },
+      {
+        "stem": "9999951_00000_d_0000092",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          149,
+          149,
+          149
+        ],
+        "final_count": 149
+      },
+      {
+        "stem": "9999951_00000_d_0000097",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          90,
+          90,
+          90
+        ],
+        "final_count": 86
+      },
+      {
+        "stem": "9999951_00000_d_0000107",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          254,
+          254,
+          254
+        ],
+        "final_count": 244
+      },
+      {
+        "stem": "9999951_00000_d_0000117",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          132,
+          132,
+          132
+        ],
+        "final_count": 128
+      },
+      {
+        "stem": "9999951_00000_d_0000145",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          200,
+          200,
+          200
+        ],
+        "final_count": 194
+      },
+      {
+        "stem": "9999951_00000_d_0000158",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          129,
+          129,
+          129
+        ],
+        "final_count": 128
+      },
+      {
+        "stem": "9999952_00000_d_0000002",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          174,
+          174,
+          174
+        ],
+        "final_count": 172
+      },
+      {
+        "stem": "9999952_00000_d_0000027",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          55,
+          55,
+          55
+        ],
+        "final_count": 54
+      },
+      {
+        "stem": "9999952_00000_d_0000180",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          72
+        ],
+        "final_count": 72
+      },
+      {
+        "stem": "9999952_00000_d_0000200",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          72
+        ],
+        "final_count": 72
+      },
+      {
+        "stem": "9999952_00000_d_0000239",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          87,
+          87,
+          87
+        ],
+        "final_count": 87
+      },
+      {
+        "stem": "9999952_00000_d_0000319",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          60,
+          60,
+          60
+        ],
+        "final_count": 60
+      },
+      {
+        "stem": "9999953_00000_d_0000054",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          78,
+          78,
+          78
+        ],
+        "final_count": 78
+      },
+      {
+        "stem": "9999953_00000_d_0000069",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          53,
+          53,
+          53
+        ],
+        "final_count": 53
+      },
+      {
+        "stem": "9999953_00000_d_0000121",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          74,
+          74,
+          74
+        ],
+        "final_count": 74
+      },
+      {
+        "stem": "9999955_00000_d_0000034",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          167,
+          167,
+          167
+        ],
+        "final_count": 163
+      },
+      {
+        "stem": "9999955_00000_d_0000052",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          119,
+          119,
+          119
+        ],
+        "final_count": 119
+      },
+      {
+        "stem": "9999955_00000_d_0000069",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          114,
+          114,
+          114
+        ],
+        "final_count": 114
+      },
+      {
+        "stem": "9999955_00000_d_0000143",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          110,
+          110,
+          110
+        ],
+        "final_count": 110
+      },
+      {
+        "stem": "9999955_00000_d_0000266",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          124,
+          124,
+          124
+        ],
+        "final_count": 124
+      },
+      {
+        "stem": "9999955_00000_d_0000302",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          88,
+          88,
+          88
+        ],
+        "final_count": 88
+      },
+      {
+        "stem": "9999955_00000_d_0000432",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          204,
+          204,
+          204
+        ],
+        "final_count": 196
+      },
+      {
+        "stem": "9999956_00000_d_0000086",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          70,
+          70,
+          70
+        ],
+        "final_count": 70
+      },
+      {
+        "stem": "9999960_00000_d_0000004",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          87,
+          87,
+          87
+        ],
+        "final_count": 85
+      },
+      {
+        "stem": "9999960_00000_d_0000054",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          83,
+          83,
+          83
+        ],
+        "final_count": 79
+      },
+      {
+        "stem": "9999960_00000_d_0000092",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          82,
+          82,
+          82
+        ],
+        "final_count": 80
+      },
+      {
+        "stem": "9999960_00000_d_0000110",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          86,
+          86,
+          86
+        ],
+        "final_count": 83
+      },
+      {
+        "stem": "9999960_00000_d_0000156",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          84,
+          84,
+          84
+        ],
+        "final_count": 80
+      },
+      {
+        "stem": "9999960_00000_d_0000169",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          57,
+          57,
+          57
+        ],
+        "final_count": 54
+      },
+      {
+        "stem": "9999962_00000_d_0000005",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          85,
+          85,
+          85
+        ],
+        "final_count": 85
+      },
+      {
+        "stem": "9999962_00000_d_0000011",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          182,
+          182,
+          182
+        ],
+        "final_count": 179
+      },
+      {
+        "stem": "9999962_00000_d_0000162",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          160,
+          160,
+          160
+        ],
+        "final_count": 157
+      },
+      {
+        "stem": "9999963_00000_d_0000026",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          249,
+          249,
+          249
+        ],
+        "final_count": 246
+      },
+      {
+        "stem": "9999963_00000_d_0000029",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          146,
+          146,
+          146
+        ],
+        "final_count": 144
+      },
+      {
+        "stem": "9999964_00000_d_0000016",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          187,
+          187,
+          187
+        ],
+        "final_count": 180
+      },
+      {
+        "stem": "9999964_00000_d_0000024",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          200,
+          200,
+          200
+        ],
+        "final_count": 193
+      },
+      {
+        "stem": "9999964_00000_d_0000059",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          286,
+          286,
+          286
+        ],
+        "final_count": 274
+      },
+      {
+        "stem": "9999964_00000_d_0000079",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          94,
+          94,
+          94
+        ],
+        "final_count": 92
+      },
+      {
+        "stem": "9999966_00000_d_0000135",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          184,
+          184,
+          184
+        ],
+        "final_count": 179
+      },
+      {
+        "stem": "9999969_00000_d_0000022",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          239,
+          239,
+          239
+        ],
+        "final_count": 233
+      },
+      {
+        "stem": "9999970_00000_d_0000003",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          190,
+          190,
+          190
+        ],
+        "final_count": 189
+      },
+      {
+        "stem": "9999972_00000_d_0000046",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          159,
+          159,
+          159
+        ],
+        "final_count": 155
+      },
+      {
+        "stem": "9999972_00000_d_0000064",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          140,
+          140,
+          140
+        ],
+        "final_count": 136
+      },
+      {
+        "stem": "9999972_00000_d_0000104",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          109,
+          109,
+          109
+        ],
+        "final_count": 109
+      },
+      {
+        "stem": "9999973_00000_d_0000033",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          169,
+          169,
+          169
+        ],
+        "final_count": 166
+      },
+      {
+        "stem": "9999973_00000_d_0000070",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          157,
+          157,
+          157
+        ],
+        "final_count": 152
+      },
+      {
+        "stem": "9999973_00000_d_0000076",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          166,
+          166,
+          166
+        ],
+        "final_count": 165
+      },
+      {
+        "stem": "9999974_00000_d_0000005",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          125,
+          125,
+          125
+        ],
+        "final_count": 120
+      },
+      {
+        "stem": "9999976_00000_d_0000004",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          72
+        ],
+        "final_count": 72
+      },
+      {
+        "stem": "9999977_00000_d_0000038",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          190,
+          190,
+          190
+        ],
+        "final_count": 190
+      },
+      {
+        "stem": "9999979_00000_d_0000046",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          104,
+          104,
+          104
+        ],
+        "final_count": 104
+      },
+      {
+        "stem": "9999981_00000_d_0000063",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          83,
+          83,
+          83
+        ],
+        "final_count": 83
+      },
+      {
+        "stem": "9999981_00000_d_0000075",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          159,
+          159,
+          159
+        ],
+        "final_count": 152
+      },
+      {
+        "stem": "9999981_00000_d_0000114",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          176,
+          176,
+          176
+        ],
+        "final_count": 174
+      },
+      {
+        "stem": "9999981_00000_d_0000131",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          215,
+          215,
+          215
+        ],
+        "final_count": 212
+      },
+      {
+        "stem": "9999981_00000_d_0000151",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          122,
+          122,
+          122
+        ],
+        "final_count": 118
+      },
+      {
+        "stem": "9999984_00000_d_0000044",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          187,
+          187,
+          187
+        ],
+        "final_count": 183
+      },
+      {
+        "stem": "9999984_00000_d_0000064",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          116,
+          116,
+          116
+        ],
+        "final_count": 115
+      },
+      {
+        "stem": "9999984_00000_d_0000106",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          176,
+          176,
+          176
+        ],
+        "final_count": 176
+      },
+      {
+        "stem": "9999986_00000_d_0000011",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          198,
+          198,
+          198
+        ],
+        "final_count": 193
+      },
+      {
+        "stem": "9999993_00000_d_0000022",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          252,
+          252,
+          252
+        ],
+        "final_count": 243
+      },
+      {
+        "stem": "9999998_00076_d_0000061",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          322,
+          322,
+          322
+        ],
+        "final_count": 314
+      },
+      {
+        "stem": "9999998_00300_d_0000253",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          104,
+          104,
+          104
+        ],
+        "final_count": 100
+      },
+      {
+        "stem": "9999998_00314_d_0000267",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          169,
+          169,
+          169
+        ],
+        "final_count": 164
+      },
+      {
+        "stem": "9999998_00357_d_0000309",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          218,
+          218,
+          218
+        ],
+        "final_count": 217
+      },
+      {
+        "stem": "9999999_00073_d_0000023",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          167,
+          167,
+          167
+        ],
+        "final_count": 159
+      },
+      {
+        "stem": "9999999_00091_d_0000032",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          258,
+          258,
+          258
+        ],
+        "final_count": 250
+      },
+      {
+        "stem": "9999999_00512_d_0000229",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          204,
+          204,
+          204
+        ],
+        "final_count": 200
+      },
+      {
+        "stem": "9999999_00522_d_0000234",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          230,
+          230,
+          230
+        ],
+        "final_count": 226
+      },
+      {
+        "stem": "9999999_00646_d_0000294",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          222,
+          222,
+          222
+        ],
+        "final_count": 219
+      },
+      {
+        "stem": "9999999_00749_d_0000342",
+        "actions": [
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          190,
+          190,
+          190
+        ],
+        "final_count": 189
+      }
+    ],
+    "all_qwen_mapped_actions": [
+      {
+        "stem": "0000021_00000_d_0000001",
+        "actions": [
+          "ADD_BICYCLE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          97,
+          109,
+          203
+        ],
+        "final_count": 202
+      },
+      {
+        "stem": "0000040_03288_d_0000069",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          159,
+          333,
+          362
+        ],
+        "final_count": 355
+      },
+      {
+        "stem": "0000072_07660_d_0000012",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          174,
+          325,
+          390
+        ],
+        "final_count": 419
+      },
+      {
+        "stem": "0000074_13313_d_0000026",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          249,
+          537,
+          585
+        ],
+        "final_count": 619
+      },
+      {
+        "stem": "0000074_15793_d_0000031",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          196,
+          482,
+          539
+        ],
+        "final_count": 547
+      },
+      {
+        "stem": "0000087_01580_d_0000005",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_MOTORBIKE",
+          "ADD_BICYCLE",
+          "ADD_TRICYCLE",
+          "ADD_COVERED_TRICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          206,
+          532,
+          575
+        ],
+        "final_count": 616
+      },
+      {
+        "stem": "0000103_03349_d_0000031",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          65,
+          71,
+          73
+        ],
+        "final_count": 72
+      },
+      {
+        "stem": "0000103_03738_d_0000032",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          67,
+          67,
+          67
+        ],
+        "final_count": 67
+      },
+      {
+        "stem": "0000113_00814_d_0000076",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          95,
+          170,
+          192
+        ],
+        "final_count": 213
+      },
+      {
+        "stem": "0000134_01332_d_0000146",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          281,
+          530,
+          530
+        ],
+        "final_count": 523
+      },
+      {
+        "stem": "0000140_02477_d_0000006",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          318,
+          590,
+          590
+        ],
+        "final_count": 578
+      },
+      {
+        "stem": "0000152_02214_d_0000150",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          169,
+          409,
+          450
+        ],
+        "final_count": 445
+      },
+      {
+        "stem": "0000167_01384_d_0000131",
+        "actions": [
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          158,
+          251,
+          251
+        ],
+        "final_count": 248
+      },
+      {
+        "stem": "0000170_00801_d_0000001",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          157,
+          219,
+          229
+        ],
+        "final_count": 227
+      },
+      {
+        "stem": "0000173_00401_d_0000001",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          113,
+          158,
+          158
+        ],
+        "final_count": 158
+      },
+      {
+        "stem": "0000180_00000_d_0000019",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          56,
+          101,
+          115
+        ],
+        "final_count": 175
+      },
+      {
+        "stem": "0000193_01705_d_0000112",
+        "actions": [
+          "ADD_BICYCLE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          296,
+          347,
+          698
+        ],
+        "final_count": 692
+      },
+      {
+        "stem": "0000198_01629_d_0000160",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          108,
+          146,
+          166
+        ],
+        "final_count": 271
+      },
+      {
+        "stem": "0000207_00700_d_0000008",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          163,
+          417,
+          417
+        ],
+        "final_count": 413
+      },
+      {
+        "stem": "0000239_06950_d_0000018",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          107,
+          170,
+          170
+        ],
+        "final_count": 168
+      },
+      {
+        "stem": "0000242_04600_d_0000014",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_TRICYCLE"
+        ],
+        "candidate_count_by_round": [
+          121,
+          230,
+          236
+        ],
+        "final_count": 230
+      },
+      {
+        "stem": "0000257_03360_d_0000058",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          102,
+          167,
+          167
+        ],
+        "final_count": 161
+      },
+      {
+        "stem": "0000257_03864_d_0000062",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_MOTORCYCLE"
+        ],
+        "candidate_count_by_round": [
+          82,
+          250,
+          255
+        ],
+        "final_count": 249
+      },
+      {
+        "stem": "0000260_01609_d_0000109",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          103,
+          171,
+          192
+        ],
+        "final_count": 267
+      },
+      {
+        "stem": "0000276_05601_d_0000535",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          61,
+          78,
+          78
+        ],
+        "final_count": 78
+      },
+      {
+        "stem": "0000293_03601_d_0000940",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          251,
+          533,
+          533
+        ],
+        "final_count": 520
+      },
+      {
+        "stem": "0000299_03500_d_0000104",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          160,
+          282,
+          282
+        ],
+        "final_count": 280
+      },
+      {
+        "stem": "0000309_03801_d_0000352",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          189,
+          335,
+          335
+        ],
+        "final_count": 329
+      },
+      {
+        "stem": "0000313_05401_d_0000463",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          103,
+          136,
+          136
+        ],
+        "final_count": 134
+      },
+      {
+        "stem": "0000314_01000_d_0000144",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          106,
+          177,
+          210
+        ],
+        "final_count": 247
+      },
+      {
+        "stem": "0000320_00750_d_0000007",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          131,
+          189,
+          201
+        ],
+        "final_count": 307
+      },
+      {
+        "stem": "0000323_00401_d_0000634",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          175,
+          307,
+          307
+        ],
+        "final_count": 301
+      },
+      {
+        "stem": "0000323_01801_d_0000641",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          175,
+          290,
+          290
+        ],
+        "final_count": 285
+      },
+      {
+        "stem": "0000327_03601_d_0000729",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          192,
+          311,
+          364
+        ],
+        "final_count": 589
+      },
+      {
+        "stem": "0000338_01961_d_0000148",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          204,
+          290,
+          323
+        ],
+        "final_count": 405
+      },
+      {
+        "stem": "0000348_05097_d_0000432",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          309,
+          412,
+          412
+        ],
+        "final_count": 397
+      },
+      {
+        "stem": "0000353_00000_d_0000188",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          160,
+          285,
+          285
+        ],
+        "final_count": 276
+      },
+      {
+        "stem": "0000360_00981_d_0000718",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          256,
+          448,
+          486
+        ],
+        "final_count": 659
+      },
+      {
+        "stem": "0000366_04117_d_0000798",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          270,
+          629,
+          761
+        ],
+        "final_count": 952
+      },
+      {
+        "stem": "9999937_00000_d_0000007",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          126,
+          206,
+          257
+        ],
+        "final_count": 284
+      },
+      {
+        "stem": "9999937_00000_d_0000029",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          144,
+          200,
+          200
+        ],
+        "final_count": 199
+      },
+      {
+        "stem": "9999937_00000_d_0000075",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          70,
+          70,
+          70
+        ],
+        "final_count": 69
+      },
+      {
+        "stem": "9999937_00000_d_0000129",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          245,
+          327,
+          327
+        ],
+        "final_count": 326
+      },
+      {
+        "stem": "9999937_00000_d_0000215",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          219,
+          422,
+          422
+        ],
+        "final_count": 416
+      },
+      {
+        "stem": "9999938_00000_d_0000021",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          129,
+          234,
+          234
+        ],
+        "final_count": 234
+      },
+      {
+        "stem": "9999938_00000_d_0000073",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          211,
+          289,
+          289
+        ],
+        "final_count": 289
+      },
+      {
+        "stem": "9999938_00000_d_0000079",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          149,
+          220,
+          220
+        ],
+        "final_count": 218
+      },
+      {
+        "stem": "9999938_00000_d_0000080",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          149,
+          227,
+          227
+        ],
+        "final_count": 225
+      },
+      {
+        "stem": "9999938_00000_d_0000168",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          113,
+          155,
+          155
+        ],
+        "final_count": 151
+      },
+      {
+        "stem": "9999938_00000_d_0000189",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          153,
+          371,
+          371
+        ],
+        "final_count": 370
+      },
+      {
+        "stem": "9999938_00000_d_0000190",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          141,
+          277,
+          277
+        ],
+        "final_count": 273
+      },
+      {
+        "stem": "9999938_00000_d_0000201",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          119,
+          120,
+          120
+        ],
+        "final_count": 120
+      },
+      {
+        "stem": "9999938_00000_d_0000249",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          172,
+          423,
+          423
+        ],
+        "final_count": 420
+      },
+      {
+        "stem": "9999938_00000_d_0000251",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          110,
+          221,
+          221
+        ],
+        "final_count": 221
+      },
+      {
+        "stem": "9999938_00000_d_0000257",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          159,
+          283,
+          283
+        ],
+        "final_count": 276
+      },
+      {
+        "stem": "9999938_00000_d_0000259",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          170,
+          382,
+          382
+        ],
+        "final_count": 379
+      },
+      {
+        "stem": "9999938_00000_d_0000310",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          201,
+          414,
+          439
+        ],
+        "final_count": 585
+      },
+      {
+        "stem": "9999938_00000_d_0000366",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          79,
+          115,
+          115
+        ],
+        "final_count": 115
+      },
+      {
+        "stem": "9999938_00000_d_0000413",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          93,
+          146,
+          146
+        ],
+        "final_count": 145
+      },
+      {
+        "stem": "9999940_00000_d_0000069",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          162,
+          311,
+          311
+        ],
+        "final_count": 310
+      },
+      {
+        "stem": "9999940_00000_d_0000089",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          123,
+          410,
+          410
+        ],
+        "final_count": 406
+      },
+      {
+        "stem": "9999941_00000_d_0000001",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          121,
+          132,
+          172
+        ],
+        "final_count": 375
+      },
+      {
+        "stem": "9999941_00000_d_0000004",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          142,
+          214,
+          245
+        ],
+        "final_count": 339
+      },
+      {
+        "stem": "9999941_00000_d_0000024",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          109,
+          170,
+          170
+        ],
+        "final_count": 169
+      },
+      {
+        "stem": "9999942_00000_d_0000065",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          169,
+          204,
+          207
+        ],
+        "final_count": 551
+      },
+      {
+        "stem": "9999942_00000_d_0000091",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          121,
+          197,
+          275
+        ],
+        "final_count": 288
+      },
+      {
+        "stem": "9999942_00000_d_0000139",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          259,
+          701,
+          813
+        ],
+        "final_count": 876
+      },
+      {
+        "stem": "9999942_00000_d_0000142",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          145,
+          364,
+          396
+        ],
+        "final_count": 416
+      },
+      {
+        "stem": "9999942_00000_d_0000174",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          217,
+          563,
+          625
+        ],
+        "final_count": 764
+      },
+      {
+        "stem": "9999942_00000_d_0000223",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          101,
+          121,
+          152
+        ],
+        "final_count": 162
+      },
+      {
+        "stem": "9999942_00000_d_0000226",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          98,
+          98,
+          121
+        ],
+        "final_count": 124
+      },
+      {
+        "stem": "9999942_00000_d_0000230",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          122,
+          122,
+          147
+        ],
+        "final_count": 158
+      },
+      {
+        "stem": "9999942_00000_d_0000238",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          108,
+          112,
+          141
+        ],
+        "final_count": 147
+      },
+      {
+        "stem": "9999943_00000_d_0000033",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          205,
+          486,
+          527
+        ],
+        "final_count": 576
+      },
+      {
+        "stem": "9999945_00000_d_0000014",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          65,
+          65,
+          65
+        ],
+        "final_count": 65
+      },
+      {
+        "stem": "9999945_00000_d_0000057",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          123,
+          165,
+          184
+        ],
+        "final_count": 250
+      },
+      {
+        "stem": "9999945_00000_d_0000092",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          113,
+          199,
+          218
+        ],
+        "final_count": 381
+      },
+      {
+        "stem": "9999945_00000_d_0000123",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          222,
+          347,
+          362
+        ],
+        "final_count": 634
+      },
+      {
+        "stem": "9999945_00000_d_0000126",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          165,
+          250,
+          259
+        ],
+        "final_count": 362
+      },
+      {
+        "stem": "9999951_00000_d_0000092",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          149,
+          442,
+          442
+        ],
+        "final_count": 442
+      },
+      {
+        "stem": "9999951_00000_d_0000097",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          90,
+          101,
+          101
+        ],
+        "final_count": 97
+      },
+      {
+        "stem": "9999951_00000_d_0000107",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          254,
+          613,
+          613
+        ],
+        "final_count": 603
+      },
+      {
+        "stem": "9999951_00000_d_0000117",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          132,
+          162,
+          162
+        ],
+        "final_count": 157
+      },
+      {
+        "stem": "9999951_00000_d_0000145",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          200,
+          428,
+          428
+        ],
+        "final_count": 422
+      },
+      {
+        "stem": "9999951_00000_d_0000158",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          129,
+          292,
+          292
+        ],
+        "final_count": 291
+      },
+      {
+        "stem": "9999952_00000_d_0000002",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          174,
+          406,
+          406
+        ],
+        "final_count": 403
+      },
+      {
+        "stem": "9999952_00000_d_0000027",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          55,
+          75,
+          86
+        ],
+        "final_count": 90
+      },
+      {
+        "stem": "9999952_00000_d_0000180",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          87
+        ],
+        "final_count": 105
+      },
+      {
+        "stem": "9999952_00000_d_0000200",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          72,
+          78,
+          90
+        ],
+        "final_count": 115
+      },
+      {
+        "stem": "9999952_00000_d_0000239",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          87,
+          140,
+          140
+        ],
+        "final_count": 140
+      },
+      {
+        "stem": "9999952_00000_d_0000319",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          60,
+          60,
+          89
+        ],
+        "final_count": 95
+      },
+      {
+        "stem": "9999953_00000_d_0000054",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          78,
+          93,
+          105
+        ],
+        "final_count": 183
+      },
+      {
+        "stem": "9999953_00000_d_0000069",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          53,
+          71,
+          89
+        ],
+        "final_count": 119
+      },
+      {
+        "stem": "9999953_00000_d_0000121",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          74,
+          79,
+          87
+        ],
+        "final_count": 140
+      },
+      {
+        "stem": "9999955_00000_d_0000034",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_MOTORBIKE",
+          "ADD_BICYCLE",
+          "ADD_TRICYCLE",
+          "ADD_COVERED_TRICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          167,
+          410,
+          468
+        ],
+        "final_count": 474
+      },
+      {
+        "stem": "9999955_00000_d_0000052",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          119,
+          321,
+          321
+        ],
+        "final_count": 321
+      },
+      {
+        "stem": "9999955_00000_d_0000069",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          114,
+          274,
+          274
+        ],
+        "final_count": 274
+      },
+      {
+        "stem": "9999955_00000_d_0000143",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          110,
+          295,
+          295
+        ],
+        "final_count": 295
+      },
+      {
+        "stem": "9999955_00000_d_0000266",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          124,
+          324,
+          338
+        ],
+        "final_count": 337
+      },
+      {
+        "stem": "9999955_00000_d_0000302",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          88,
+          120,
+          120
+        ],
+        "final_count": 120
+      },
+      {
+        "stem": "9999955_00000_d_0000432",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          204,
+          374,
+          374
+        ],
+        "final_count": 364
+      },
+      {
+        "stem": "9999956_00000_d_0000086",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          70,
+          96,
+          96
+        ],
+        "final_count": 96
+      },
+      {
+        "stem": "9999960_00000_d_0000004",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          87,
+          88,
+          88
+        ],
+        "final_count": 86
+      },
+      {
+        "stem": "9999960_00000_d_0000054",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          83,
+          99,
+          99
+        ],
+        "final_count": 153
+      },
+      {
+        "stem": "9999960_00000_d_0000092",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          82,
+          93,
+          104
+        ],
+        "final_count": 156
+      },
+      {
+        "stem": "9999960_00000_d_0000110",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          86,
+          86,
+          113
+        ],
+        "final_count": 160
+      },
+      {
+        "stem": "9999960_00000_d_0000156",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          84,
+          94,
+          97
+        ],
+        "final_count": 134
+      },
+      {
+        "stem": "9999960_00000_d_0000169",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          57,
+          68,
+          68
+        ],
+        "final_count": 65
+      },
+      {
+        "stem": "9999962_00000_d_0000005",
+        "actions": [
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          85,
+          143,
+          143
+        ],
+        "final_count": 143
+      },
+      {
+        "stem": "9999962_00000_d_0000011",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          182,
+          301,
+          318
+        ],
+        "final_count": 411
+      },
+      {
+        "stem": "9999962_00000_d_0000162",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          160,
+          238,
+          272
+        ],
+        "final_count": 297
+      },
+      {
+        "stem": "9999963_00000_d_0000026",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          249,
+          460,
+          541
+        ],
+        "final_count": 567
+      },
+      {
+        "stem": "9999963_00000_d_0000029",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          146,
+          219,
+          226
+        ],
+        "final_count": 285
+      },
+      {
+        "stem": "9999964_00000_d_0000016",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          187,
+          331,
+          344
+        ],
+        "final_count": 564
+      },
+      {
+        "stem": "9999964_00000_d_0000024",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          200,
+          285,
+          289
+        ],
+        "final_count": 585
+      },
+      {
+        "stem": "9999964_00000_d_0000059",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          286,
+          574,
+          625
+        ],
+        "final_count": 1018
+      },
+      {
+        "stem": "9999964_00000_d_0000079",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          94,
+          110,
+          110
+        ],
+        "final_count": 124
+      },
+      {
+        "stem": "9999966_00000_d_0000135",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          184,
+          262,
+          262
+        ],
+        "final_count": 256
+      },
+      {
+        "stem": "9999969_00000_d_0000022",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          239,
+          431,
+          441
+        ],
+        "final_count": 595
+      },
+      {
+        "stem": "9999970_00000_d_0000003",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_MOTORCYCLE"
+        ],
+        "candidate_count_by_round": [
+          190,
+          282,
+          288
+        ],
+        "final_count": 286
+      },
+      {
+        "stem": "9999972_00000_d_0000046",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          159,
+          348,
+          348
+        ],
+        "final_count": 343
+      },
+      {
+        "stem": "9999972_00000_d_0000064",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          140,
+          282,
+          282
+        ],
+        "final_count": 278
+      },
+      {
+        "stem": "9999972_00000_d_0000104",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          109,
+          196,
+          196
+        ],
+        "final_count": 196
+      },
+      {
+        "stem": "9999973_00000_d_0000033",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_MOTORCYCLE"
+        ],
+        "candidate_count_by_round": [
+          169,
+          241,
+          253
+        ],
+        "final_count": 250
+      },
+      {
+        "stem": "9999973_00000_d_0000070",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          157,
+          324,
+          397
+        ],
+        "final_count": 431
+      },
+      {
+        "stem": "9999973_00000_d_0000076",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          166,
+          445,
+          445
+        ],
+        "final_count": 444
+      },
+      {
+        "stem": "9999974_00000_d_0000005",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          125,
+          203,
+          203
+        ],
+        "final_count": 198
+      },
+      {
+        "stem": "9999976_00000_d_0000004",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          72,
+          215,
+          215
+        ],
+        "final_count": 215
+      },
+      {
+        "stem": "9999977_00000_d_0000038",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          190,
+          465,
+          465
+        ],
+        "final_count": 465
+      },
+      {
+        "stem": "9999979_00000_d_0000046",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          104,
+          243,
+          243
+        ],
+        "final_count": 243
+      },
+      {
+        "stem": "9999981_00000_d_0000063",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          83,
+          119,
+          130
+        ],
+        "final_count": 147
+      },
+      {
+        "stem": "9999981_00000_d_0000075",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          159,
+          201,
+          201
+        ],
+        "final_count": 195
+      },
+      {
+        "stem": "9999981_00000_d_0000114",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          176,
+          200,
+          200
+        ],
+        "final_count": 198
+      },
+      {
+        "stem": "9999981_00000_d_0000131",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          215,
+          550,
+          686
+        ],
+        "final_count": 726
+      },
+      {
+        "stem": "9999981_00000_d_0000151",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          122,
+          154,
+          188
+        ],
+        "final_count": 282
+      },
+      {
+        "stem": "9999984_00000_d_0000044",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          187,
+          332,
+          332
+        ],
+        "final_count": 328
+      },
+      {
+        "stem": "9999984_00000_d_0000064",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          116,
+          255,
+          255
+        ],
+        "final_count": 254
+      },
+      {
+        "stem": "9999984_00000_d_0000106",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          176,
+          511,
+          589
+        ],
+        "final_count": 622
+      },
+      {
+        "stem": "9999986_00000_d_0000011",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          198,
+          447,
+          532
+        ],
+        "final_count": 574
+      },
+      {
+        "stem": "9999993_00000_d_0000022",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          252,
+          571,
+          571
+        ],
+        "final_count": 562
+      },
+      {
+        "stem": "9999998_00076_d_0000061",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          322,
+          990,
+          990
+        ],
+        "final_count": 979
+      },
+      {
+        "stem": "9999998_00300_d_0000253",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          104,
+          176,
+          176
+        ],
+        "final_count": 172
+      },
+      {
+        "stem": "9999998_00314_d_0000267",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          169,
+          386,
+          386
+        ],
+        "final_count": 380
+      },
+      {
+        "stem": "9999998_00357_d_0000309",
+        "actions": [
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          218,
+          247,
+          247
+        ],
+        "final_count": 246
+      },
+      {
+        "stem": "9999999_00073_d_0000023",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          167,
+          229,
+          239
+        ],
+        "final_count": 472
+      },
+      {
+        "stem": "9999999_00091_d_0000032",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          258,
+          521,
+          556
+        ],
+        "final_count": 982
+      },
+      {
+        "stem": "9999999_00512_d_0000229",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          204,
+          372,
+          409
+        ],
+        "final_count": 687
+      },
+      {
+        "stem": "9999999_00522_d_0000234",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          230,
+          414,
+          440
+        ],
+        "final_count": 701
+      },
+      {
+        "stem": "9999999_00646_d_0000294",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          222,
+          279,
+          286
+        ],
+        "final_count": 651
+      },
+      {
+        "stem": "9999999_00749_d_0000342",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE",
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          190,
+          389,
+          423
+        ],
+        "final_count": 764
+      }
+    ],
+    "qwen_dynamic_rl": [
+      {
+        "stem": "0000021_00000_d_0000001",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          97,
+          191,
+          203
+        ],
+        "final_count": 202
+      },
+      {
+        "stem": "0000040_03288_d_0000069",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          159,
+          333,
+          362
+        ],
+        "final_count": 355
+      },
+      {
+        "stem": "0000072_07660_d_0000012",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          174,
+          325,
+          390
+        ],
+        "final_count": 380
+      },
+      {
+        "stem": "0000074_13313_d_0000026",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          249,
+          537,
+          585
+        ],
+        "final_count": 578
+      },
+      {
+        "stem": "0000074_15793_d_0000031",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          196,
+          196,
+          482
+        ],
+        "final_count": 480
+      },
+      {
+        "stem": "0000087_01580_d_0000005",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          206,
+          532,
+          575
+        ],
+        "final_count": 566
+      },
+      {
+        "stem": "0000103_03349_d_0000031",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          65,
+          65,
+          65
+        ],
+        "final_count": 64
+      },
+      {
+        "stem": "0000103_03738_d_0000032",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          67,
+          67,
+          67
+        ],
+        "final_count": 67
+      },
+      {
+        "stem": "0000113_00814_d_0000076",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          95,
+          170,
+          192
+        ],
+        "final_count": 189
+      },
+      {
+        "stem": "0000134_01332_d_0000146",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          281,
+          281,
+          530
+        ],
+        "final_count": 523
+      },
+      {
+        "stem": "0000140_02477_d_0000006",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          318,
+          318,
+          590
+        ],
+        "final_count": 578
+      },
+      {
+        "stem": "0000152_02214_d_0000150",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          169,
+          409,
+          450
+        ],
+        "final_count": 445
+      },
+      {
+        "stem": "0000167_01384_d_0000131",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          158,
+          158,
+          251
+        ],
+        "final_count": 248
+      },
+      {
+        "stem": "0000170_00801_d_0000001",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          157,
+          219,
+          229
+        ],
+        "final_count": 227
+      },
+      {
+        "stem": "0000173_00401_d_0000001",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          113,
+          158,
+          158
+        ],
+        "final_count": 158
+      },
+      {
+        "stem": "0000180_00000_d_0000019",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          56,
+          56,
+          56
+        ],
+        "final_count": 56
+      },
+      {
+        "stem": "0000193_01705_d_0000112",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          296,
+          647,
+          698
+        ],
+        "final_count": 692
+      },
+      {
+        "stem": "0000198_01629_d_0000160",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          108,
+          146,
+          166
+        ],
+        "final_count": 166
+      },
+      {
+        "stem": "0000207_00700_d_0000008",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          163,
+          163,
+          163
+        ],
+        "final_count": 160
+      },
+      {
+        "stem": "0000239_06950_d_0000018",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          107,
+          107,
+          170
+        ],
+        "final_count": 168
+      },
+      {
+        "stem": "0000242_04600_d_0000014",
+        "actions": [
+          "STOP",
+          "ADD_TRICYCLE"
+        ],
+        "candidate_count_by_round": [
+          121,
+          121,
+          127
+        ],
+        "final_count": 121
+      },
+      {
+        "stem": "0000257_03360_d_0000058",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          102,
+          102,
+          102
+        ],
+        "final_count": 96
+      },
+      {
+        "stem": "0000257_03864_d_0000062",
+        "actions": [
+          "STOP",
+          "ADD_MOTORCYCLE"
+        ],
+        "candidate_count_by_round": [
+          82,
+          82,
+          87
+        ],
+        "final_count": 82
+      },
+      {
+        "stem": "0000260_01609_d_0000109",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          103,
+          171,
+          236
+        ],
+        "final_count": 234
+      },
+      {
+        "stem": "0000276_05601_d_0000535",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          61,
+          61,
+          78
+        ],
+        "final_count": 78
+      },
+      {
+        "stem": "0000293_03601_d_0000940",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          251,
+          251,
+          533
+        ],
+        "final_count": 520
+      },
+      {
+        "stem": "0000299_03500_d_0000104",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          160,
+          160,
+          282
+        ],
+        "final_count": 280
+      },
+      {
+        "stem": "0000309_03801_d_0000352",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          189,
+          189,
+          335
+        ],
+        "final_count": 329
+      },
+      {
+        "stem": "0000313_05401_d_0000463",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          103,
+          136,
+          136
+        ],
+        "final_count": 134
+      },
+      {
+        "stem": "0000314_01000_d_0000144",
+        "actions": [
+          "ADD_PEOPLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          106,
+          139,
+          158
+        ],
+        "final_count": 156
+      },
+      {
+        "stem": "0000320_00750_d_0000007",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          131,
+          189,
+          201
+        ],
+        "final_count": 199
+      },
+      {
+        "stem": "0000323_00401_d_0000634",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          175,
+          175,
+          307
+        ],
+        "final_count": 301
+      },
+      {
+        "stem": "0000323_01801_d_0000641",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          175,
+          290,
+          290
+        ],
+        "final_count": 285
+      },
+      {
+        "stem": "0000327_03601_d_0000729",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          192,
+          311,
+          316
+        ],
+        "final_count": 312
+      },
+      {
+        "stem": "0000338_01961_d_0000148",
+        "actions": [
+          "ADD_PEOPLE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          204,
+          237,
+          323
+        ],
+        "final_count": 311
+      },
+      {
+        "stem": "0000348_05097_d_0000432",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          309,
+          412,
+          412
+        ],
+        "final_count": 397
+      },
+      {
+        "stem": "0000353_00000_d_0000188",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          160,
+          285,
+          285
+        ],
+        "final_count": 276
+      },
+      {
+        "stem": "0000360_00981_d_0000718",
+        "actions": [
+          "ADD_PEOPLE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          256,
+          294,
+          486
+        ],
+        "final_count": 477
+      },
+      {
+        "stem": "0000366_04117_d_0000798",
+        "actions": [
+          "ADD_BICYCLE",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          270,
+          275,
+          474
+        ],
+        "final_count": 468
+      },
+      {
+        "stem": "9999937_00000_d_0000007",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          126,
+          158,
+          238
+        ],
+        "final_count": 235
+      },
+      {
+        "stem": "9999937_00000_d_0000029",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          144,
+          200,
+          200
+        ],
+        "final_count": 199
+      },
+      {
+        "stem": "9999937_00000_d_0000075",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          70,
+          70,
+          70
+        ],
+        "final_count": 68
+      },
+      {
+        "stem": "9999937_00000_d_0000129",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          245,
+          327,
+          327
+        ],
+        "final_count": 326
+      },
+      {
+        "stem": "9999937_00000_d_0000215",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          219,
+          422,
+          422
+        ],
+        "final_count": 416
+      },
+      {
+        "stem": "9999938_00000_d_0000021",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          129,
+          129,
+          129
+        ],
+        "final_count": 129
+      },
+      {
+        "stem": "9999938_00000_d_0000073",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          211,
+          211,
+          289
+        ],
+        "final_count": 289
+      },
+      {
+        "stem": "9999938_00000_d_0000079",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          149,
+          149,
+          149
+        ],
+        "final_count": 148
+      },
+      {
+        "stem": "9999938_00000_d_0000080",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          149,
+          149,
+          149
+        ],
+        "final_count": 149
+      },
+      {
+        "stem": "9999938_00000_d_0000168",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          113,
+          155,
+          155
+        ],
+        "final_count": 151
+      },
+      {
+        "stem": "9999938_00000_d_0000189",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          153,
+          153,
+          153
+        ],
+        "final_count": 153
+      },
+      {
+        "stem": "9999938_00000_d_0000190",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          141,
+          141,
+          277
+        ],
+        "final_count": 273
+      },
+      {
+        "stem": "9999938_00000_d_0000201",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          119,
+          119,
+          120
+        ],
+        "final_count": 120
+      },
+      {
+        "stem": "9999938_00000_d_0000249",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          172,
+          172,
+          172
+        ],
+        "final_count": 169
+      },
+      {
+        "stem": "9999938_00000_d_0000251",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          110,
+          110,
+          110
+        ],
+        "final_count": 110
+      },
+      {
+        "stem": "9999938_00000_d_0000257",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          159,
+          159,
+          283
+        ],
+        "final_count": 276
+      },
+      {
+        "stem": "9999938_00000_d_0000259",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          170,
+          170,
+          170
+        ],
+        "final_count": 168
+      },
+      {
+        "stem": "9999938_00000_d_0000310",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          201,
+          201,
+          201
+        ],
+        "final_count": 199
+      },
+      {
+        "stem": "9999938_00000_d_0000366",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          79,
+          79,
+          79
+        ],
+        "final_count": 79
+      },
+      {
+        "stem": "9999938_00000_d_0000413",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          93,
+          93,
+          93
+        ],
+        "final_count": 92
+      },
+      {
+        "stem": "9999940_00000_d_0000069",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          162,
+          162,
+          311
+        ],
+        "final_count": 310
+      },
+      {
+        "stem": "9999940_00000_d_0000089",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          123,
+          123,
+          123
+        ],
+        "final_count": 119
+      },
+      {
+        "stem": "9999941_00000_d_0000001",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          121,
+          121,
+          121
+        ],
+        "final_count": 121
+      },
+      {
+        "stem": "9999941_00000_d_0000004",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          142,
+          214,
+          245
+        ],
+        "final_count": 243
+      },
+      {
+        "stem": "9999941_00000_d_0000024",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          109,
+          170,
+          170
+        ],
+        "final_count": 169
+      },
+      {
+        "stem": "9999942_00000_d_0000065",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          169,
+          204,
+          207
+        ],
+        "final_count": 205
+      },
+      {
+        "stem": "9999942_00000_d_0000091",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          121,
+          121,
+          121
+        ],
+        "final_count": 116
+      },
+      {
+        "stem": "9999942_00000_d_0000139",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          259,
+          701,
+          772
+        ],
+        "final_count": 765
+      },
+      {
+        "stem": "9999942_00000_d_0000142",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          145,
+          145,
+          157
+        ],
+        "final_count": 154
+      },
+      {
+        "stem": "9999942_00000_d_0000174",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          217,
+          563,
+          625
+        ],
+        "final_count": 620
+      },
+      {
+        "stem": "9999942_00000_d_0000223",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          101,
+          115,
+          135
+        ],
+        "final_count": 132
+      },
+      {
+        "stem": "9999942_00000_d_0000226",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          98,
+          98,
+          98
+        ],
+        "final_count": 94
+      },
+      {
+        "stem": "9999942_00000_d_0000230",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          122,
+          122,
+          133
+        ],
+        "final_count": 133
+      },
+      {
+        "stem": "9999942_00000_d_0000238",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          108,
+          108,
+          108
+        ],
+        "final_count": 104
+      },
+      {
+        "stem": "9999943_00000_d_0000033",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          205,
+          486,
+          527
+        ],
+        "final_count": 516
+      },
+      {
+        "stem": "9999945_00000_d_0000014",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          65,
+          65,
+          65
+        ],
+        "final_count": 65
+      },
+      {
+        "stem": "9999945_00000_d_0000057",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          123,
+          123,
+          190
+        ],
+        "final_count": 189
+      },
+      {
+        "stem": "9999945_00000_d_0000092",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          113,
+          113,
+          199
+        ],
+        "final_count": 199
+      },
+      {
+        "stem": "9999945_00000_d_0000123",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          222,
+          347,
+          362
+        ],
+        "final_count": 355
+      },
+      {
+        "stem": "9999945_00000_d_0000126",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          165,
+          250,
+          259
+        ],
+        "final_count": 254
+      },
+      {
+        "stem": "9999951_00000_d_0000092",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          149,
+          149,
+          149
+        ],
+        "final_count": 149
+      },
+      {
+        "stem": "9999951_00000_d_0000097",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          90,
+          90,
+          101
+        ],
+        "final_count": 97
+      },
+      {
+        "stem": "9999951_00000_d_0000107",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          254,
+          613,
+          613
+        ],
+        "final_count": 603
+      },
+      {
+        "stem": "9999951_00000_d_0000117",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          132,
+          132,
+          132
+        ],
+        "final_count": 128
+      },
+      {
+        "stem": "9999951_00000_d_0000145",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          200,
+          200,
+          200
+        ],
+        "final_count": 194
+      },
+      {
+        "stem": "9999951_00000_d_0000158",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          129,
+          129,
+          129
+        ],
+        "final_count": 128
+      },
+      {
+        "stem": "9999952_00000_d_0000002",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          174,
+          174,
+          174
+        ],
+        "final_count": 172
+      },
+      {
+        "stem": "9999952_00000_d_0000027",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          55,
+          55,
+          55
+        ],
+        "final_count": 54
+      },
+      {
+        "stem": "9999952_00000_d_0000180",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          72
+        ],
+        "final_count": 72
+      },
+      {
+        "stem": "9999952_00000_d_0000200",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          97
+        ],
+        "final_count": 97
+      },
+      {
+        "stem": "9999952_00000_d_0000239",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          87,
+          140,
+          140
+        ],
+        "final_count": 140
+      },
+      {
+        "stem": "9999952_00000_d_0000319",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          60,
+          60,
+          66
+        ],
+        "final_count": 66
+      },
+      {
+        "stem": "9999953_00000_d_0000054",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          78,
+          78,
+          78
+        ],
+        "final_count": 78
+      },
+      {
+        "stem": "9999953_00000_d_0000069",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          53,
+          53,
+          53
+        ],
+        "final_count": 53
+      },
+      {
+        "stem": "9999953_00000_d_0000121",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          74,
+          74,
+          74
+        ],
+        "final_count": 74
+      },
+      {
+        "stem": "9999955_00000_d_0000034",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          167,
+          410,
+          425
+        ],
+        "final_count": 420
+      },
+      {
+        "stem": "9999955_00000_d_0000052",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          119,
+          119,
+          119
+        ],
+        "final_count": 119
+      },
+      {
+        "stem": "9999955_00000_d_0000069",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          114,
+          114,
+          114
+        ],
+        "final_count": 114
+      },
+      {
+        "stem": "9999955_00000_d_0000143",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          110,
+          110,
+          110
+        ],
+        "final_count": 110
+      },
+      {
+        "stem": "9999955_00000_d_0000266",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          124,
+          124,
+          324
+        ],
+        "final_count": 323
+      },
+      {
+        "stem": "9999955_00000_d_0000302",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          88,
+          88,
+          88
+        ],
+        "final_count": 88
+      },
+      {
+        "stem": "9999955_00000_d_0000432",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          204,
+          204,
+          374
+        ],
+        "final_count": 364
+      },
+      {
+        "stem": "9999956_00000_d_0000086",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          70,
+          70,
+          70
+        ],
+        "final_count": 70
+      },
+      {
+        "stem": "9999960_00000_d_0000004",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          87,
+          87,
+          87
+        ],
+        "final_count": 85
+      },
+      {
+        "stem": "9999960_00000_d_0000054",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          83,
+          99,
+          157
+        ],
+        "final_count": 153
+      },
+      {
+        "stem": "9999960_00000_d_0000092",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          82,
+          82,
+          82
+        ],
+        "final_count": 80
+      },
+      {
+        "stem": "9999960_00000_d_0000110",
+        "actions": [
+          "STOP",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          86,
+          86,
+          113
+        ],
+        "final_count": 110
+      },
+      {
+        "stem": "9999960_00000_d_0000156",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          84,
+          84,
+          84
+        ],
+        "final_count": 80
+      },
+      {
+        "stem": "9999960_00000_d_0000169",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          57,
+          57,
+          57
+        ],
+        "final_count": 54
+      },
+      {
+        "stem": "9999962_00000_d_0000005",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          85,
+          85,
+          143
+        ],
+        "final_count": 143
+      },
+      {
+        "stem": "9999962_00000_d_0000011",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          182,
+          301,
+          318
+        ],
+        "final_count": 315
+      },
+      {
+        "stem": "9999962_00000_d_0000162",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          160,
+          160,
+          171
+        ],
+        "final_count": 169
+      },
+      {
+        "stem": "9999963_00000_d_0000026",
+        "actions": [
+          "ADD_PEOPLE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          249,
+          330,
+          541
+        ],
+        "final_count": 536
+      },
+      {
+        "stem": "9999963_00000_d_0000029",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          146,
+          192,
+          265
+        ],
+        "final_count": 262
+      },
+      {
+        "stem": "9999964_00000_d_0000016",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          187,
+          331,
+          344
+        ],
+        "final_count": 337
+      },
+      {
+        "stem": "9999964_00000_d_0000024",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          200,
+          285,
+          289
+        ],
+        "final_count": 282
+      },
+      {
+        "stem": "9999964_00000_d_0000059",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          286,
+          286,
+          574
+        ],
+        "final_count": 562
+      },
+      {
+        "stem": "9999964_00000_d_0000079",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          94,
+          110,
+          125
+        ],
+        "final_count": 124
+      },
+      {
+        "stem": "9999966_00000_d_0000135",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          184,
+          184,
+          262
+        ],
+        "final_count": 256
+      },
+      {
+        "stem": "9999969_00000_d_0000022",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          239,
+          431,
+          441
+        ],
+        "final_count": 434
+      },
+      {
+        "stem": "9999970_00000_d_0000003",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "ADD_MOTORCYCLE"
+        ],
+        "candidate_count_by_round": [
+          190,
+          282,
+          288
+        ],
+        "final_count": 286
+      },
+      {
+        "stem": "9999972_00000_d_0000046",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          159,
+          159,
+          159
+        ],
+        "final_count": 155
+      },
+      {
+        "stem": "9999972_00000_d_0000064",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          140,
+          140,
+          282
+        ],
+        "final_count": 278
+      },
+      {
+        "stem": "9999972_00000_d_0000104",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          109,
+          109,
+          196
+        ],
+        "final_count": 196
+      },
+      {
+        "stem": "9999973_00000_d_0000033",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          169,
+          169,
+          169
+        ],
+        "final_count": 166
+      },
+      {
+        "stem": "9999973_00000_d_0000070",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          157,
+          324,
+          397
+        ],
+        "final_count": 391
+      },
+      {
+        "stem": "9999973_00000_d_0000076",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          166,
+          166,
+          166
+        ],
+        "final_count": 165
+      },
+      {
+        "stem": "9999974_00000_d_0000005",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          125,
+          203,
+          203
+        ],
+        "final_count": 198
+      },
+      {
+        "stem": "9999976_00000_d_0000004",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          72,
+          72,
+          72
+        ],
+        "final_count": 72
+      },
+      {
+        "stem": "9999977_00000_d_0000038",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          190,
+          190,
+          190
+        ],
+        "final_count": 190
+      },
+      {
+        "stem": "9999979_00000_d_0000046",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          104,
+          104,
+          104
+        ],
+        "final_count": 104
+      },
+      {
+        "stem": "9999981_00000_d_0000063",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          83,
+          83,
+          100
+        ],
+        "final_count": 100
+      },
+      {
+        "stem": "9999981_00000_d_0000075",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          159,
+          201,
+          201
+        ],
+        "final_count": 195
+      },
+      {
+        "stem": "9999981_00000_d_0000114",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          176,
+          176,
+          176
+        ],
+        "final_count": 174
+      },
+      {
+        "stem": "9999981_00000_d_0000131",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          215,
+          550,
+          599
+        ],
+        "final_count": 593
+      },
+      {
+        "stem": "9999981_00000_d_0000151",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          122,
+          122,
+          122
+        ],
+        "final_count": 118
+      },
+      {
+        "stem": "9999984_00000_d_0000044",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          187,
+          187,
+          187
+        ],
+        "final_count": 183
+      },
+      {
+        "stem": "9999984_00000_d_0000064",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          116,
+          116,
+          116
+        ],
+        "final_count": 115
+      },
+      {
+        "stem": "9999984_00000_d_0000106",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          176,
+          511,
+          589
+        ],
+        "final_count": 587
+      },
+      {
+        "stem": "9999986_00000_d_0000011",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          198,
+          447,
+          532
+        ],
+        "final_count": 525
+      },
+      {
+        "stem": "9999993_00000_d_0000022",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          252,
+          252,
+          252
+        ],
+        "final_count": 243
+      },
+      {
+        "stem": "9999998_00076_d_0000061",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          322,
+          322,
+          322
+        ],
+        "final_count": 314
+      },
+      {
+        "stem": "9999998_00300_d_0000253",
+        "actions": [
+          "ADD_GDINO_BASE",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          104,
+          176,
+          176
+        ],
+        "final_count": 172
+      },
+      {
+        "stem": "9999998_00314_d_0000267",
+        "actions": [
+          "STOP",
+          "STOP"
+        ],
+        "candidate_count_by_round": [
+          169,
+          169,
+          169
+        ],
+        "final_count": 164
+      },
+      {
+        "stem": "9999998_00357_d_0000309",
+        "actions": [
+          "STOP",
+          "ADD_GDINO_BASE"
+        ],
+        "candidate_count_by_round": [
+          218,
+          218,
+          247
+        ],
+        "final_count": 246
+      },
+      {
+        "stem": "9999999_00073_d_0000023",
+        "actions": [
+          "STOP",
+          "ADD_PERSON"
+        ],
+        "candidate_count_by_round": [
+          167,
+          167,
+          229
+        ],
+        "final_count": 221
+      },
+      {
+        "stem": "9999999_00091_d_0000032",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          258,
+          521,
+          556
+        ],
+        "final_count": 548
+      },
+      {
+        "stem": "9999999_00512_d_0000229",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          204,
+          372,
+          409
+        ],
+        "final_count": 405
+      },
+      {
+        "stem": "9999999_00522_d_0000234",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_PEOPLE"
+        ],
+        "candidate_count_by_round": [
+          230,
+          414,
+          440
+        ],
+        "final_count": 436
+      },
+      {
+        "stem": "9999999_00646_d_0000294",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          222,
+          279,
+          279
+        ],
+        "final_count": 276
+      },
+      {
+        "stem": "9999999_00749_d_0000342",
+        "actions": [
+          "ADD_PERSON",
+          "ADD_BICYCLE"
+        ],
+        "candidate_count_by_round": [
+          190,
+          389,
+          389
+        ],
+        "final_count": 388
+      }
+    ]
+  }
+}

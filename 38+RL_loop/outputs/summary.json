@@ -1,0 +1,62 @@
+{
+  "method": "Three-round Exp38 rescoring over RL inference-loop candidates",
+  "checkpoint": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/rl_policy_exp38_reward.pt",
+  "device": "cuda:0",
+  "action_counts": {
+    "STOP": 97,
+    "ADD_GDINO_BASE": 0,
+    "ADD_PERSON": 112,
+    "ADD_PEOPLE": 14,
+    "ADD_GROUP_OF_PEOPLE": 1,
+    "ADD_TRICYCLE": 0,
+    "ADD_COVERED_TRICYCLE": 7,
+    "ADD_AWNING_TRICYCLE": 0,
+    "ADD_MOTORCYCLE": 2,
+    "ADD_MOTORBIKE": 49,
+    "ADD_SCOOTER": 0,
+    "ADD_BICYCLE": 18
+  },
+  "exp38_match_ratio": 0.6113094073929201,
+  "query_base_exp38_scored_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 22298.0,
+    "tp_05": 3708.0,
+    "tp_075": 2496.0,
+    "acc_05": 0.46506960993352564,
+    "acc_075": 0.31305656590994607,
+    "map_05": 0.13428721728831167
+  },
+  "rl_plain_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 8329.0,
+    "tp_05": 3323.0,
+    "tp_075": 2411.0,
+    "acc_05": 0.41678163802834567,
+    "acc_075": 0.30239558509971154,
+    "map_05": 0.12654963342608133
+  },
+  "exp38_full_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 52872.0,
+    "tp_05": 4285.0,
+    "tp_075": 2761.0,
+    "acc_05": 0.5374388561394707,
+    "acc_075": 0.34629374137714786,
+    "map_05": 0.14641035884417355
+  },
+  "test_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 40904.0,
+    "tp_05": 4220.0,
+    "tp_075": 2639.0,
+    "acc_05": 0.5292863414022325,
+    "acc_075": 0.33099209833187004,
+    "map_05": 0.1396931961093901
+  },
+  "trace_path": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/closed_loop_trace.json",
+  "prediction_dir": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/predictions"
+}

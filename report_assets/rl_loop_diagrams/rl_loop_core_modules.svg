@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+  <defs>
+    <marker id="arrowhead" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <polygon points="0,0 14,7 0,14" fill="#a96826"/>
+    </marker>
+    <style>
+      text { font-family: "Arial", "PingFang SC", "Microsoft YaHei", sans-serif; fill: #1f2328; }
+      .title { font-size: 44px; font-weight: 800; fill: #c8742c; }
+      .label { font-size: 35px; font-weight: 800; }
+      .small { font-size: 24px; font-weight: 600; fill: #5b6472; }
+      .chip { font-size: 21px; font-weight: 700; fill: #7b3f0e; }
+      .white { fill: #fffaf4; stroke: #c86f2a; stroke-width: 5; }
+      .beige { fill: #fde9cc; stroke: #d47a2d; stroke-width: 5; }
+      .gold { fill: #ffe28b; stroke: #d47a2d; stroke-width: 5; }
+      .purple { fill: #ede9ff; stroke: #6b4de6; stroke-width: 5; }
+      .arrow { stroke: #a96826; stroke-width: 8; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+      .loopline { stroke: #a96826; stroke-width: 9; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+
+  <rect width="1800" height="900" fill="#f6efe6"/>
+  <text x="70" y="82" class="title">强化学习控制的反馈式候选集生成</text>
+  <text x="70" y="126" class="small">只画强化学习闭环的核心逻辑：state、policy score、action mask、reward、merge + dedup</text>
+
+  <rect x="55" y="155" width="1690" height="575" rx="34" class="white"/>
+
+  <rect x="100" y="265" width="230" height="145" rx="26" class="beige"/>
+  <text x="215" y="328" text-anchor="middle" class="label">Grounding</text>
+  <text x="215" y="378" text-anchor="middle" class="label">DINO</text>
+
+  <text x="455" y="310" text-anchor="middle" class="label">C0 / C1 / C2</text>
+  <text x="455" y="360" text-anchor="middle" class="small">38-d state</text>
+  <line x1="345" y1="338" x2="570" y2="338" class="arrow"/>
+
+  <rect x="600" y="230" width="420" height="210" rx="34" class="white"/>
+  <text x="810" y="292" text-anchor="middle" class="label" fill="#6b4de6">policy score</text>
+  <text x="810" y="340" text-anchor="middle" class="small">state-aware + action-aware</text>
+  <text x="810" y="386" text-anchor="middle" class="small">给每个候选动作打分</text>
+
+  <line x1="1028" y1="338" x2="1090" y2="338" class="arrow"/>
+
+  <text x="1185" y="248" text-anchor="middle" class="label" fill="#6b4de6">scores</text>
+  <rect x="1110" y="335" width="40" height="80" fill="#ede9ff" stroke="#6b4de6" stroke-width="5"/>
+  <rect x="1170" y="292" width="40" height="123" fill="#ede9ff" stroke="#6b4de6" stroke-width="5"/>
+  <rect x="1230" y="316" width="40" height="99" fill="#ede9ff" stroke="#6b4de6" stroke-width="5"/>
+  <rect x="1290" y="250" width="40" height="165" fill="#ffe4e2" stroke="#f04a3a" stroke-width="5"/>
+  <rect x="1350" y="325" width="40" height="90" fill="#ede9ff" stroke="#6b4de6" stroke-width="5"/>
+  <text x="1130" y="452" text-anchor="middle" class="chip">A0</text>
+  <text x="1190" y="452" text-anchor="middle" class="chip">A1</text>
+  <text x="1250" y="452" text-anchor="middle" class="chip">A2</text>
+  <text x="1310" y="452" text-anchor="middle" class="chip">A3</text>
+  <text x="1370" y="452" text-anchor="middle" class="chip">Ak</text>
+  <text x="1310" y="220" text-anchor="middle" class="small" fill="#f04a3a">selected</text>
+
+  <line x1="1415" y1="338" x2="1475" y2="338" class="arrow"/>
+  <polygon points="1570,244 1670,338 1570,432 1470,338" class="gold"/>
+  <text x="1570" y="348" text-anchor="middle" class="label">ACTION</text>
+  <text x="1570" y="392" text-anchor="middle" class="small">STOP / expand</text>
+
+  <rect x="670" y="510" width="370" height="88" rx="22" class="beige"/>
+  <text x="855" y="566" text-anchor="middle" class="label">action pool</text>
+  <text x="855" y="618" text-anchor="middle" class="small">mask used prompts</text>
+  <line x1="855" y1="510" x2="855" y2="448" class="arrow"/>
+
+  <rect x="1060" y="512" width="350" height="88" rx="22" class="purple"/>
+  <text x="1235" y="566" text-anchor="middle" class="label">reward evaluator</text>
+  <text x="1235" y="618" text-anchor="middle" class="small">training only</text>
+
+  <rect x="1435" y="512" width="260" height="88" rx="22" class="beige"/>
+  <text x="1565" y="566" text-anchor="middle" class="label">merge + dedup</text>
+  <text x="1565" y="618" text-anchor="middle" class="small">next state</text>
+
+  <path d="M 1570 432 L 1570 512" class="arrow"/>
+  <path d="M 1435 556 L 1416 556" class="arrow"/>
+  <path d="M 1435 556 C 1190 710 430 710 215 412" class="loopline"/>
+
+  <rect x="85" y="760" width="1630" height="88" rx="24" fill="#f5d0b2"/>
+  <text x="112" y="815" font-size="30" font-weight="800">REWARD</text>
+  <text x="265" y="815" font-size="25">= 0.40 recall + 0.22 recall@0.75 + 0.45 small_recall + 0.15 precision - candidate cost - action cost - stop penalty</text>
+</svg>

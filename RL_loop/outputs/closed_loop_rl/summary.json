@@ -1,0 +1,38 @@
+{
+  "train": {
+    "split": "val",
+    "image_count": 150,
+    "best": {
+      "epoch": 274.0,
+      "val_mean_reward": 0.014094577170908451,
+      "loss": -0.01404557190835476
+    },
+    "state_dim": 38,
+    "action_counts_oracle": {
+      "STOP": 135,
+      "USE_QUERY_ONLY": 4,
+      "ADD_QUERY_ALIAS": 7,
+      "ADD_QUERY_ALIAS_FALLBACK": 4
+    }
+  },
+  "test": {
+    "split": "test",
+    "image_count": 150,
+    "action_counts": {
+      "STOP": 142,
+      "USE_QUERY_ONLY": 0,
+      "ADD_QUERY_ALIAS": 6,
+      "ADD_QUERY_ALIAS_FALLBACK": 2
+    },
+    "metrics": {
+      "gt_box_count": 7973.0,
+      "prediction_box_count": 8329.0,
+      "tp_05": 3323.0,
+      "tp_075": 2411.0,
+      "acc_05": 0.41678163802834567,
+      "acc_075": 0.30239558509971154,
+      "map_05": 0.12654963342608133
+    }
+  },
+  "checkpoint": "RL_loop/outputs/closed_loop_rl/rl_policy_best.pt"
+}

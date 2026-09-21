@@ -1,0 +1,71 @@
+{
+  "method": "2-round Exp38 rescoring over RL inference-loop candidates",
+  "loop_rounds": 2,
+  "checkpoint": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/rl_policy_exp38_reward.pt",
+  "device": "cuda:0",
+  "timing": {
+    "closed_loop_inference_sec": 11.266508842818439,
+    "evaluation_and_reference_sec": 7.070475647225976,
+    "total_sec": 18.336984490044415,
+    "images_per_sec": 13.313795967560425,
+    "inference_ms_per_image": 75.11005895212293,
+    "scope": "cached candidate loading, policy decisions, merging, deduplication, and Exp38 rescoring; excludes GroundingDINO candidate generation"
+  },
+  "action_counts": {
+    "STOP": 42,
+    "ADD_GDINO_BASE": 0,
+    "ADD_PERSON": 87,
+    "ADD_PEOPLE": 13,
+    "ADD_GROUP_OF_PEOPLE": 0,
+    "ADD_TRICYCLE": 0,
+    "ADD_COVERED_TRICYCLE": 7,
+    "ADD_AWNING_TRICYCLE": 0,
+    "ADD_MOTORCYCLE": 1,
+    "ADD_MOTORBIKE": 0,
+    "ADD_SCOOTER": 0,
+    "ADD_BICYCLE": 0
+  },
+  "exp38_match_ratio": 0.5758796382746019,
+  "query_base_exp38_scored_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 22298.0,
+    "tp_05": 3708.0,
+    "tp_075": 2496.0,
+    "acc_05": 0.46506960993352564,
+    "acc_075": 0.31305656590994607,
+    "map_05": 0.13428721728831167
+  },
+  "rl_plain_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 8329.0,
+    "tp_05": 3323.0,
+    "tp_075": 2411.0,
+    "acc_05": 0.41678163802834567,
+    "acc_075": 0.30239558509971154,
+    "map_05": 0.12654963342608133
+  },
+  "exp38_full_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 52872.0,
+    "tp_05": 4285.0,
+    "tp_075": 2761.0,
+    "acc_05": 0.5374388561394707,
+    "acc_075": 0.34629374137714786,
+    "map_05": 0.14641035884417355
+  },
+  "test_metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 37487.0,
+    "tp_05": 4097.0,
+    "tp_075": 2594.0,
+    "acc_05": 0.5138592750533049,
+    "acc_075": 0.32534804966762826,
+    "map_05": 0.1385653521503812
+  },
+  "trace_path": "38+RL_loop/outputs/round_ablation/round2/closed_loop_trace.json",
+  "prediction_dir": "38+RL_loop/outputs/round_ablation/round2/predictions"
+}

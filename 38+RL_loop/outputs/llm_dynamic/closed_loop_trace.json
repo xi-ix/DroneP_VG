@@ -1,0 +1,4328 @@
+[
+  {
+    "stem": "0000021_00000_d_0000001",
+    "query": "A white electric bicycle was parked on the sidewalk with a man in brown clothes on the left,a woman in a floral shirt at the top right.",
+    "llm_prompts": [
+      "a white electric bicycle",
+      "a man wearing brown clothes",
+      "a woman wearing a floral shirt",
+      "a person standing on the sidewalk",
+      "a person sitting on the sidewalk",
+      "a person walking on the sidewalk",
+      "a person standing near the bicycle",
+      "a person wearing casual clothing"
+    ],
+    "mapped_sources": [
+      "bicycle",
+      "person",
+      "person",
+      "person",
+      "person",
+      "person",
+      "person",
+      "person"
+    ],
+    "actions": [
+      "person",
+      "bicycle"
+    ],
+    "final_count": 202
+  },
+  {
+    "stem": "0000040_03288_d_0000069",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 355
+  },
+  {
+    "stem": "0000072_07660_d_0000012",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 380
+  },
+  {
+    "stem": "0000074_13313_d_0000026",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 578
+  },
+  {
+    "stem": "0000074_15793_d_0000031",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 480
+  },
+  {
+    "stem": "0000087_01580_d_0000005",
+    "query": "A man wearing a white top and blue shorts is walking on the basketball court, with a man wearing a red sportswear on the right and a man wearing a brown top and black shorts on the left.",
+    "llm_prompts": [
+      "person",
+      "people",
+      "motorbike",
+      "bicycle",
+      "tricycle",
+      "covered tricycle",
+      "traffic vehicle",
+      "small road object"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "motorbike",
+      "bicycle",
+      "tricycle",
+      "covered tricycle",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 566
+  },
+  {
+    "stem": "0000103_03349_d_0000031",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 64
+  },
+  {
+    "stem": "0000103_03738_d_0000032",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 67
+  },
+  {
+    "stem": "0000113_00814_d_0000076",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 189
+  },
+  {
+    "stem": "0000134_01332_d_0000146",
+    "query": "A brown sedan was parked in the lane, with a white sedan at the top right.",
+    "llm_prompts": [
+      "brown sedan",
+      "white sedan",
+      "lane",
+      "top right",
+      "parked",
+      "drone image",
+      "road",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 523
+  },
+  {
+    "stem": "0000140_02477_d_0000006",
+    "query": "A black sedan was driving in the straight lane in of the road,with a green taxi at the top right.",
+    "llm_prompts": [
+      "black sedan",
+      "straight lane",
+      "road",
+      "green taxi",
+      "top right",
+      "driving",
+      "vehicle",
+      "transport"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 578
+  },
+  {
+    "stem": "0000152_02214_d_0000150",
+    "query": "A pedestrian in white and black was parked at the edge of the road, with a black SUV above it.",
+    "llm_prompts": [
+      "pedestrian wearing white and black clothing",
+      "person standing near the road's edge",
+      "black SUV parked behind the pedestrian",
+      "road with visible lane markings",
+      "pedestrian holding an umbrella",
+      "pedestrian wearing a backpack",
+      "pedestrian walking on the sidewalk",
+      "pedestrian carrying a bag"
+    ],
+    "mapped_sources": [
+      "person",
+      "person",
+      "person",
+      "gdino_base",
+      "person",
+      "person",
+      "person",
+      "person"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 445
+  },
+  {
+    "stem": "0000167_01384_d_0000131",
+    "query": "A woman in white is riding a red tricycle on the road. A woman in white is riding a red tricycle on the right and a blue with white sedan on the left.",
+    "llm_prompts": [
+      "A woman in white riding a red tricycle",
+      "A woman in white on a red tricycle",
+      "Woman in white on a red tricycle",
+      "Woman in white riding a tricycle",
+      "Woman in white on a tricycle",
+      "Woman in white riding a red tricycle"
+    ],
+    "mapped_sources": [
+      "person",
+      "person",
+      "person",
+      "person",
+      "person",
+      "person"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 248
+  },
+  {
+    "stem": "0000170_00801_d_0000001",
+    "query": "A white sedan is driving on the left side of the road with a white cyclist at the top right.",
+    "llm_prompts": [
+      "white sedan",
+      "left-side road",
+      "white cyclist",
+      "top-right position",
+      "driving vehicle",
+      "roadway",
+      "cyclist",
+      "right-hand traffic"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "bicycle",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "bicycle"
+    ],
+    "final_count": 227
+  },
+  {
+    "stem": "0000173_00401_d_0000001",
+    "query": "A white van was parked on the side of the road with green trees on the right and a white sedan at the bottom right.",
+    "llm_prompts": [
+      "white van",
+      "green trees",
+      "road",
+      "sedan",
+      "bottom right",
+      "parked",
+      "side of the road",
+      "drone image"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 158
+  },
+  {
+    "stem": "0000180_00000_d_0000019",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 56
+  },
+  {
+    "stem": "0000193_01705_d_0000112",
+    "query": "A black-clad cyclist is crossing the intersection. There is a red tricycle at the top left.",
+    "llm_prompts": [
+      "A black-clad cyclist crossing an intersection",
+      "A cyclist in dark clothing moving through an intersection",
+      "A person in black attire crossing a road",
+      "A cyclist wearing dark clothing navigating an intersection",
+      "A cyclist in dark clothing traversing an intersection",
+      "A cyclist in dark clothing crossing a street",
+      "A cyclist in dark clothing crossing a road"
+    ],
+    "mapped_sources": [
+      "bicycle",
+      "bicycle",
+      "person",
+      "bicycle",
+      "bicycle",
+      "bicycle",
+      "bicycle"
+    ],
+    "actions": [
+      "person",
+      "bicycle"
+    ],
+    "final_count": 692
+  },
+  {
+    "stem": "0000198_01629_d_0000160",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 166
+  },
+  {
+    "stem": "0000207_00700_d_0000008",
+    "query": "A white van is parked on the right side of the road. A white sedan at the bottom left.",
+    "llm_prompts": [
+      "white van on right side",
+      "white sedan at bottom left",
+      "road with vehicles",
+      "parked vehicle on right",
+      "bottom left corner car",
+      "right side van",
+      "left bottom car",
+      "road with cars"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 160
+  },
+  {
+    "stem": "0000239_06950_d_0000018",
+    "query": "A blue taxi is driving on the road,with a silver sedan on the left.",
+    "llm_prompts": [
+      "blue taxi",
+      "silver sedan",
+      "road",
+      "driving",
+      "left side",
+      "vehicle",
+      "transportation",
+      "roadway"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 168
+  },
+  {
+    "stem": "0000242_04600_d_0000014",
+    "query": "A silver sedan is driving on the middle road, with a blue taxi at the top right and a blue and white tricycle at the bottom right.",
+    "llm_prompts": [
+      "silver sedan",
+      "middle road",
+      "blue taxi",
+      "top right",
+      "blue and white tricycle",
+      "bottom right",
+      "driving",
+      "road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "tricycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "tricycle"
+    ],
+    "final_count": 121
+  },
+  {
+    "stem": "0000257_03360_d_0000058",
+    "query": "A white sedan is driving on the road, a silver SUV at the top left, and a silver SUV at the bottom left.",
+    "llm_prompts": [
+      "white sedan",
+      "silver SUV top left",
+      "silver SUV bottom left",
+      "road",
+      "driving",
+      "drone image",
+      "vehicle",
+      "automotive"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 96
+  },
+  {
+    "stem": "0000257_03864_d_0000062",
+    "query": "A black sedan is parked on the left side of the road, a white SUV on the right.",
+    "llm_prompts": [
+      "black sedan",
+      "white SUV",
+      "left side of road",
+      "right side of road",
+      "parked vehicle",
+      "roadside vehicles",
+      "automobiles",
+      "motor vehicles"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "motorcycle"
+    ],
+    "actions": [
+      "STOP",
+      "motorcycle"
+    ],
+    "final_count": 82
+  },
+  {
+    "stem": "0000260_01609_d_0000109",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 234
+  },
+  {
+    "stem": "0000276_05601_d_0000535",
+    "query": "A black sedan goes straight on the far right side of the road. There is a black sedan at the top left.",
+    "llm_prompts": [
+      "black sedan on far right",
+      "black sedan at top left",
+      "road with black sedan",
+      "sedan driving straight",
+      "black car on road",
+      "sedan in motion",
+      "road with vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 78
+  },
+  {
+    "stem": "0000293_03601_d_0000940",
+    "query": "A white sedan stopped in the left turn lane of the road waiting for the traffic light, ready to turn left, a gray SUV on the left.",
+    "llm_prompts": [
+      "white sedan stopped in left turn lane",
+      "gray SUV on left side of road",
+      "traffic light ahead",
+      "ready to turn left",
+      "drone image of vehicle",
+      "road scene with vehicles",
+      "waiting for traffic signal",
+      "drone shot of traffic"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 520
+  },
+  {
+    "stem": "0000299_03500_d_0000104",
+    "query": "A white SUV was traveling in the straight and left turn lanes,with a white sedan below.",
+    "llm_prompts": [
+      "white SUV",
+      "straight lane",
+      "left turn lane",
+      "white sedan",
+      "below",
+      "driving",
+      "road",
+      "curved road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 280
+  },
+  {
+    "stem": "0000309_03801_d_0000352",
+    "query": "A silver van is parked in an open space, there was a white sedan at the top right.",
+    "llm_prompts": [
+      "silver van",
+      "open space",
+      "white sedan",
+      "top right",
+      "parked",
+      "drone image",
+      "vehicle",
+      "automobile"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 329
+  },
+  {
+    "stem": "0000313_05401_d_0000463",
+    "query": "An orange SUV was driving in the street, a black SUV above it.",
+    "llm_prompts": [
+      "orange SUV",
+      "black SUV",
+      "street",
+      "driving",
+      "above",
+      "road",
+      "vehicle",
+      "transport"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 134
+  },
+  {
+    "stem": "0000314_01000_d_0000144",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "people",
+      "gdino_base"
+    ],
+    "final_count": 156
+  },
+  {
+    "stem": "0000320_00750_d_0000007",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 199
+  },
+  {
+    "stem": "0000323_00401_d_0000634",
+    "query": "A silver sedan is turning left. There is a white SUV on the left and a silver SUV at the bottom right.",
+    "llm_prompts": [
+      "silver sedan turning left",
+      "white SUV on left side",
+      "silver SUV at bottom right",
+      "drone image of vehicles",
+      "drone shot of cars",
+      "silver sedan in motion",
+      "white SUV parked nearby",
+      "silver SUV in corner"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 301
+  },
+  {
+    "stem": "0000323_01801_d_0000641",
+    "query": "A silver truck is driving in the middle of the road with a white sedan below of it.",
+    "llm_prompts": [
+      "silver truck",
+      "white sedan",
+      "road",
+      "middle of the road",
+      "driving",
+      "below",
+      "concrete object",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 285
+  },
+  {
+    "stem": "0000327_03601_d_0000729",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "bicycle"
+    ],
+    "final_count": 312
+  },
+  {
+    "stem": "0000338_01961_d_0000148",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "people",
+      "person"
+    ],
+    "final_count": 311
+  },
+  {
+    "stem": "0000348_05097_d_0000432",
+    "query": "This is a black SUV, driving on a straight lane and a right turn, with a white sedan on the right.",
+    "llm_prompts": [
+      "black SUV",
+      "straight lane",
+      "right turn",
+      "white sedan",
+      "driving",
+      "road",
+      "curved road",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 397
+  },
+  {
+    "stem": "0000353_00000_d_0000188",
+    "query": "A silver sedan is driving in the right lane, with a black sedan at the bottom left and a white SUV at the top right.",
+    "llm_prompts": [
+      "silver sedan in right lane",
+      "black sedan at bottom left",
+      "white SUV at top right",
+      "driving silver sedan",
+      "black sedan at lower left",
+      "white SUV at upper right",
+      "silver sedan on right side",
+      "black sedan at bottom corner"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 276
+  },
+  {
+    "stem": "0000360_00981_d_0000718",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "people",
+      "person"
+    ],
+    "final_count": 477
+  },
+  {
+    "stem": "0000366_04117_d_0000798",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "bicycle",
+      "gdino_base"
+    ],
+    "final_count": 468
+  },
+  {
+    "stem": "9999937_00000_d_0000007",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "person"
+    ],
+    "final_count": 235
+  },
+  {
+    "stem": "9999937_00000_d_0000029",
+    "query": "A silver gray van is parked on the parking space,with a red truck on the left.",
+    "llm_prompts": [
+      "silver-gray van",
+      "red truck",
+      "parking space",
+      "drone image",
+      "vehicle",
+      "car",
+      "truck",
+      "parked"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 199
+  },
+  {
+    "stem": "9999937_00000_d_0000075",
+    "query": "A blue waterwheel is parked in the factory parking lot,with a blue waterwheel on the right it.",
+    "llm_prompts": [
+      "blue waterwheel",
+      "factory parking lot",
+      "parked waterwheel",
+      "blue water wheel",
+      "water wheel",
+      "parking area",
+      "industrial setting"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 68
+  },
+  {
+    "stem": "9999937_00000_d_0000129",
+    "query": "This is a white SUV, parked on the side of the road, a black sedan on the left.",
+    "llm_prompts": [
+      "white SUV",
+      "black sedan",
+      "roadside parking",
+      "drone image",
+      "suv vehicle",
+      "sedan car",
+      "sidewalk view",
+      "drone shot"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 326
+  },
+  {
+    "stem": "9999937_00000_d_0000215",
+    "query": "A silver van is driving on the road with a brown sedan on the right.",
+    "llm_prompts": [
+      "silver van",
+      "brown sedan",
+      "road",
+      "driving",
+      "vehicle",
+      "transportation",
+      "roadway",
+      "automobile"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 416
+  },
+  {
+    "stem": "9999938_00000_d_0000021",
+    "query": "A red sedan with a white roof was driving down the road, a red sedan with a white roof at the bottom left.",
+    "llm_prompts": [
+      "red sedan",
+      "white roof",
+      "driving down road",
+      "bottom left",
+      "road",
+      "vehicle",
+      "car",
+      "automobile"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 129
+  },
+  {
+    "stem": "9999938_00000_d_0000073",
+    "query": "A white SUV is driving in the lane on the left, with a red and white taxi farther at the top left.",
+    "llm_prompts": [
+      "white SUV",
+      "red and white taxi",
+      "left lane",
+      "driving",
+      "top left",
+      "road",
+      "vehicle",
+      "transportation"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 289
+  },
+  {
+    "stem": "9999938_00000_d_0000079",
+    "query": "A white-topped yellow bus is driving on the road, about to leave the bus stop,with a white-topped yellow bus on the left.",
+    "llm_prompts": [
+      "white-topped yellow bus",
+      "yellow bus",
+      "bus",
+      "road",
+      "driving",
+      "leaving",
+      "bus stop",
+      "left side"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 148
+  },
+  {
+    "stem": "9999938_00000_d_0000080",
+    "query": "A red and white sedan was driving in the lane. A red double-decker bus on the right.",
+    "llm_prompts": [
+      "red sedan",
+      "white sedan",
+      "driving lane",
+      "red double-decker bus",
+      "right lane",
+      "urban traffic",
+      "city streets",
+      "roadway"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 149
+  },
+  {
+    "stem": "9999938_00000_d_0000168",
+    "query": "A black sedan is driving on the road, a white sedan on the right.",
+    "llm_prompts": [
+      "black sedan",
+      "white sedan",
+      "road",
+      "driving",
+      "left side",
+      "right side",
+      "vehicle",
+      "automobile"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 151
+  },
+  {
+    "stem": "9999938_00000_d_0000189",
+    "query": "A white van is driving in the left lane, with a gray bus on the right it.",
+    "llm_prompts": [
+      "white van in left lane",
+      "gray bus on right side",
+      "driving vehicle in left lane",
+      "passenger car in front of bus",
+      "road with vehicles",
+      "transportation scene",
+      "moving vehicles on road",
+      "traffic flow"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 153
+  },
+  {
+    "stem": "9999938_00000_d_0000190",
+    "query": "A black sedan is driving in the right lane of the road, with a black commercial vehicle at the bottom right it.",
+    "llm_prompts": [
+      "black sedan",
+      "right lane",
+      "road",
+      "black commercial vehicle",
+      "bottom right",
+      "driving",
+      "commercial truck",
+      "transportation"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 273
+  },
+  {
+    "stem": "9999938_00000_d_0000201",
+    "query": "A white sedan is driving on the right side of the road, with a black sedan at the bottom left.",
+    "llm_prompts": [
+      "white sedan",
+      "right side of road",
+      "black sedan",
+      "bottom left",
+      "driving",
+      "road",
+      "vehicle",
+      "transportation"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 120
+  },
+  {
+    "stem": "9999938_00000_d_0000249",
+    "query": "A white topped bus is driving on the right turn lane, with a blue bus at the top right.",
+    "llm_prompts": [
+      "white bus on right turn lane",
+      "blue bus in top right corner",
+      "bus driving on road",
+      "right turn lane traffic",
+      "white bus in motion",
+      "blue bus in background",
+      "road with buses",
+      "traffic scene with buses"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 169
+  },
+  {
+    "stem": "9999938_00000_d_0000251",
+    "query": "A white commercial vehicle is driving in the straight lane in the middle of the road, with a white topped red sedan on the left.",
+    "llm_prompts": [
+      "white commercial vehicle",
+      "straight lane",
+      "middle of the road",
+      "white topped red sedan",
+      "left side",
+      "driving",
+      "road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 110
+  },
+  {
+    "stem": "9999938_00000_d_0000257",
+    "query": "A blue SUV is driving on the middle road, with a white-topped blue bus at the bottom right it.",
+    "llm_prompts": [
+      "blue SUV driving",
+      "white-topped blue bus at bottom right",
+      "middle road",
+      "roadway",
+      "transportation",
+      "automobiles",
+      "vehicle",
+      "road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 276
+  },
+  {
+    "stem": "9999938_00000_d_0000259",
+    "query": "A white-topped red sedan is driving on the straight lane on the left side of the road, with a white business vehicle at the top right it.",
+    "llm_prompts": [
+      "white-topped red sedan",
+      "straight lane on the left side of the road",
+      "white business vehicle at the top right",
+      "driving on the road",
+      "road with vehicles",
+      "left-side road",
+      "top-right vehicle",
+      "vehicles on the road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 168
+  },
+  {
+    "stem": "9999938_00000_d_0000310",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 199
+  },
+  {
+    "stem": "9999938_00000_d_0000366",
+    "query": "A red roofed white sedan is moving fast on the right, and a silver car is driving at the top left and A red roofed white sedan at the bottom right.",
+    "llm_prompts": [
+      "a red-roofed white sedan moving fast",
+      "a silver car driving at the top left",
+      "a red-roofed white sedan at the bottom right",
+      "fast-moving red-roofed white sedan",
+      "silver car at the top left",
+      "red-roofed white sedan at the bottom right",
+      "white sedan moving quickly",
+      "silver car at the upper left corner"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 79
+  },
+  {
+    "stem": "9999938_00000_d_0000413",
+    "query": "A white bus is driving on the straight lane of the auxiliary road, with a white sedan at the top right.",
+    "llm_prompts": [
+      "white bus on straight lane",
+      "white sedan at top right",
+      "auxiliary road",
+      "straight road",
+      "driving vehicle",
+      "roadway",
+      "transportation",
+      "automobile"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 92
+  },
+  {
+    "stem": "9999940_00000_d_0000069",
+    "query": "A white-roofed red sedan is in the straight lane, with a white-topped red sedan at the top left it.",
+    "llm_prompts": [
+      "white-roofed red sedan",
+      "straight lane",
+      "top left",
+      "white-topped red sedan",
+      "red sedan",
+      "straight road",
+      "white roof",
+      "red car"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 310
+  },
+  {
+    "stem": "9999940_00000_d_0000089",
+    "query": "A black commercial vehicle was driving on the road with an orange commercial vehicle at the top right and a silver van on the right.",
+    "llm_prompts": [
+      "black commercial vehicle",
+      "orange commercial vehicle",
+      "silver van",
+      "road",
+      "top right",
+      "right side",
+      "driving",
+      "commercial vehicles"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 119
+  },
+  {
+    "stem": "9999941_00000_d_0000001",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 121
+  },
+  {
+    "stem": "9999941_00000_d_0000004",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 243
+  },
+  {
+    "stem": "9999941_00000_d_0000024",
+    "query": "A black SUV  is driving on the road,a red sedan with white roofed is above of it.",
+    "llm_prompts": [
+      "black SUV driving",
+      "red sedan with white roof",
+      "road surface visible",
+      "drone image",
+      "suv in motion",
+      "sedan above suv",
+      "driving vehicle",
+      "road scene"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 169
+  },
+  {
+    "stem": "9999942_00000_d_0000065",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 205
+  },
+  {
+    "stem": "9999942_00000_d_0000091",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 116
+  },
+  {
+    "stem": "9999942_00000_d_0000139",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 765
+  },
+  {
+    "stem": "9999942_00000_d_0000142",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 154
+  },
+  {
+    "stem": "9999942_00000_d_0000174",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 620
+  },
+  {
+    "stem": "9999942_00000_d_0000223",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "person"
+    ],
+    "final_count": 132
+  },
+  {
+    "stem": "9999942_00000_d_0000226",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 94
+  },
+  {
+    "stem": "9999942_00000_d_0000230",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 133
+  },
+  {
+    "stem": "9999942_00000_d_0000238",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 104
+  },
+  {
+    "stem": "9999943_00000_d_0000033",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 516
+  },
+  {
+    "stem": "9999945_00000_d_0000014",
+    "query": "A silver van is driving on the road,with a white sedan below.",
+    "llm_prompts": [
+      "silver van",
+      "white sedan",
+      "road",
+      "driving",
+      "vehicle",
+      "transportation",
+      "roadway",
+      "motion"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 65
+  },
+  {
+    "stem": "9999945_00000_d_0000057",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 189
+  },
+  {
+    "stem": "9999945_00000_d_0000092",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 199
+  },
+  {
+    "stem": "9999945_00000_d_0000123",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 355
+  },
+  {
+    "stem": "9999945_00000_d_0000126",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 254
+  },
+  {
+    "stem": "9999951_00000_d_0000092",
+    "query": "A black SUV was driving on the elevated road,with a silver fronted sedan at the top right.",
+    "llm_prompts": [
+      "black SUV driving on elevated road",
+      "silver sedan at top right",
+      "elevated roadway",
+      "black vehicle on road",
+      "silver car at edge",
+      "roadway with vehicles",
+      "black SUV in motion",
+      "silver sedan parked"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 149
+  },
+  {
+    "stem": "9999951_00000_d_0000097",
+    "query": "A red sedan with a white roof was driving down the road, with a black SUV at the top right and a silver SUV at the top left.",
+    "llm_prompts": [
+      "red sedan with white roof",
+      "black SUV at top right",
+      "silver SUV at top left",
+      "road with vehicles",
+      "driving scene",
+      "urban landscape",
+      "colorful cars",
+      "roadway with vehicles"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 97
+  },
+  {
+    "stem": "9999951_00000_d_0000107",
+    "query": "A gray van was parked on the roadside, with a white van on the right and a blue truck on the left.",
+    "llm_prompts": [
+      "gray van",
+      "white van",
+      "blue truck",
+      "roadside",
+      "parked",
+      "left side",
+      "right side",
+      "drone image"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 603
+  },
+  {
+    "stem": "9999951_00000_d_0000117",
+    "query": "A white and black sedan is parked in the parking lot,with a black van at the top right.",
+    "llm_prompts": [
+      "white sedan",
+      "black van",
+      "parking lot",
+      "top right corner",
+      "drone image",
+      "vehicle",
+      "automobile",
+      "car"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 128
+  },
+  {
+    "stem": "9999951_00000_d_0000145",
+    "query": "A grey van was parked on the side of the road with a white van at the top right and a white van at the bottom left.",
+    "llm_prompts": [
+      "grey van",
+      "white van",
+      "road",
+      "side",
+      "top right",
+      "bottom left",
+      "parked",
+      "drone image"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 194
+  },
+  {
+    "stem": "9999951_00000_d_0000158",
+    "query": "A black sedan was driving in the left lane on the overpass, and there was a black van at the bottom left.",
+    "llm_prompts": [
+      "black sedan in left lane",
+      "overpass road",
+      "black van at bottom left",
+      "driving vehicle",
+      "roadway structure",
+      "left lane traffic",
+      "bottom left corner",
+      "overhead view"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 128
+  },
+  {
+    "stem": "9999952_00000_d_0000002",
+    "query": "A white van was parked on the roadside, with a white van at the bottom left.",
+    "llm_prompts": [
+      "white van",
+      "roadside",
+      "bottom left",
+      "parked vehicle",
+      "automobile",
+      "transportation",
+      "roadway",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 172
+  },
+  {
+    "stem": "9999952_00000_d_0000027",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 54
+  },
+  {
+    "stem": "9999952_00000_d_0000180",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 72
+  },
+  {
+    "stem": "9999952_00000_d_0000200",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 97
+  },
+  {
+    "stem": "9999952_00000_d_0000239",
+    "query": "A white topped red taxi is driving in the right lane, a black sedan at the bottom right,a white topped red taxi on the left.",
+    "llm_prompts": [
+      "white top red taxi in right lane",
+      "black sedan at bottom right",
+      "white top red taxi on left",
+      "red cab in right lane",
+      "black car at lower right",
+      "white cab on left side",
+      "red taxi in right lane",
+      "black vehicle at bottom right"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 140
+  },
+  {
+    "stem": "9999952_00000_d_0000319",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 66
+  },
+  {
+    "stem": "9999953_00000_d_0000054",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 78
+  },
+  {
+    "stem": "9999953_00000_d_0000069",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 53
+  },
+  {
+    "stem": "9999953_00000_d_0000121",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 74
+  },
+  {
+    "stem": "9999955_00000_d_0000034",
+    "query": "A woman wearing a gray top and black shorts was standing on the left of the runway, with a woman in black top and black short above it.",
+    "llm_prompts": [
+      "person",
+      "people",
+      "motorbike",
+      "bicycle",
+      "tricycle",
+      "covered tricycle",
+      "traffic vehicle",
+      "small road object"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "motorbike",
+      "bicycle",
+      "tricycle",
+      "covered tricycle",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 420
+  },
+  {
+    "stem": "9999955_00000_d_0000052",
+    "query": "A gray bus is parked in the right lane of the road, with a yellow truck at the bottom left it.",
+    "llm_prompts": [
+      "gray bus",
+      "right lane",
+      "road",
+      "yellow truck",
+      "bottom left",
+      "parked",
+      "drone image",
+      "transportation"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 119
+  },
+  {
+    "stem": "9999955_00000_d_0000069",
+    "query": "A silver sedan is driving on the straight lane on the road,with a gray sedan at the top left.",
+    "llm_prompts": [
+      "silver sedan",
+      "gray sedan",
+      "straight lane",
+      "road",
+      "driving",
+      "top left",
+      "concrete object",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 114
+  },
+  {
+    "stem": "9999955_00000_d_0000143",
+    "query": "A white sedan is going straight down the middle road, with a red sedan with a white roof at the bottom right.",
+    "llm_prompts": [
+      "white sedan",
+      "red sedan",
+      "middle road",
+      "bottom right",
+      "straight",
+      "driving",
+      "roadway",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 110
+  },
+  {
+    "stem": "9999955_00000_d_0000266",
+    "query": "a woman in pink is standing on the sidewalk with a red and white sedan at the top right.",
+    "llm_prompts": [
+      "a woman wearing pink clothing",
+      "a person in a pink outfit",
+      "a female figure in pink attire",
+      "a woman in a pink dress",
+      "a lady in a pink shirt",
+      "a female individual in pink",
+      "a woman in a pink top",
+      "a female person in pink"
+    ],
+    "mapped_sources": [
+      "person",
+      "person",
+      "gdino_base",
+      "person",
+      "gdino_base",
+      "gdino_base",
+      "person",
+      "person"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 323
+  },
+  {
+    "stem": "9999955_00000_d_0000302",
+    "query": "A black sedan was parked on the roadside, with a red sedan above it.",
+    "llm_prompts": [
+      "black sedan",
+      "red sedan",
+      "roadside parking",
+      "parked car",
+      "sedan vehicle",
+      "automobile",
+      "roadside spot",
+      "car parked"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 88
+  },
+  {
+    "stem": "9999955_00000_d_0000432",
+    "query": "A black sedan is driving on the left of the road, with a black sedan at the bottom left.",
+    "llm_prompts": [
+      "black sedan on left side",
+      "sedan in front view",
+      "bottom left corner vehicle",
+      "road with cars",
+      "left lane car",
+      "front-facing sedan",
+      "black car on road",
+      "driving sedan"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 364
+  },
+  {
+    "stem": "9999956_00000_d_0000086",
+    "query": "A white truck is parked on the roadside, with a white truck at the bottom right.",
+    "llm_prompts": [
+      "white truck",
+      "roadside",
+      "bottom right",
+      "parked vehicle",
+      "truck",
+      "sidewalk",
+      "transportation",
+      "road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 70
+  },
+  {
+    "stem": "9999960_00000_d_0000004",
+    "query": "A black topped white sedan is driving on the road, with a silver commercial vehicle on the left and a black SUV on the right.",
+    "llm_prompts": [
+      "black sedan",
+      "white sedan",
+      "silver commercial vehicle",
+      "black SUV",
+      "road",
+      "driving",
+      "left side",
+      "right side"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 85
+  },
+  {
+    "stem": "9999960_00000_d_0000054",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 153
+  },
+  {
+    "stem": "9999960_00000_d_0000092",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 80
+  },
+  {
+    "stem": "9999960_00000_d_0000110",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "people"
+    ],
+    "final_count": 110
+  },
+  {
+    "stem": "9999960_00000_d_0000156",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 80
+  },
+  {
+    "stem": "9999960_00000_d_0000169",
+    "query": "A silver gray SUV is parked on the roadside, with a black sedan below.",
+    "llm_prompts": [
+      "silver gray SUV",
+      "black sedan",
+      "roadside parking",
+      "parked vehicle",
+      "suv on pavement",
+      "sedan beneath",
+      "roadside scene",
+      "parking lot view"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 54
+  },
+  {
+    "stem": "9999962_00000_d_0000005",
+    "query": "A man in white clothes and blue trousers is sitting on the grass. a man in white on the right.",
+    "llm_prompts": [
+      "A man wearing white clothing and blue pants seated on grass",
+      "A person in white attire and blue trousers sitting on grass",
+      "A man dressed in white and blue pants resting on grass",
+      "A man in white clothes and blue trousers sitting on grass",
+      "A man in white and blue pants sitting on grass",
+      "A man in white and blue pants seated on grass"
+    ],
+    "mapped_sources": [
+      "person",
+      "person",
+      "person",
+      "person",
+      "person",
+      "person"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 143
+  },
+  {
+    "stem": "9999962_00000_d_0000011",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 315
+  },
+  {
+    "stem": "9999962_00000_d_0000162",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 169
+  },
+  {
+    "stem": "9999963_00000_d_0000026",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "people",
+      "person"
+    ],
+    "final_count": 536
+  },
+  {
+    "stem": "9999963_00000_d_0000029",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "person"
+    ],
+    "final_count": 262
+  },
+  {
+    "stem": "9999964_00000_d_0000016",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 337
+  },
+  {
+    "stem": "9999964_00000_d_0000024",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 282
+  },
+  {
+    "stem": "9999964_00000_d_0000059",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 562
+  },
+  {
+    "stem": "9999964_00000_d_0000079",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 124
+  },
+  {
+    "stem": "9999966_00000_d_0000135",
+    "query": "A black SUV is parked on the sidewalk, with a silver sedan at the top right.",
+    "llm_prompts": [
+      "black SUV parked on sidewalk",
+      "silver sedan in upper right corner",
+      "suv on street curb",
+      "sedan at top right of image",
+      "black vehicle on sidewalk",
+      "silver car at edge of frame",
+      "suv near curb",
+      "sedan at far right"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 256
+  },
+  {
+    "stem": "9999969_00000_d_0000022",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 434
+  },
+  {
+    "stem": "9999970_00000_d_0000003",
+    "query": "A black sedan is parked in the parking space, with a white sedan above it.",
+    "llm_prompts": [
+      "black sedan",
+      "parked car",
+      "white sedan",
+      "overhead vehicle",
+      "parking space",
+      "automobile",
+      "motor vehicle",
+      "car parked"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "motorcycle",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "motorcycle"
+    ],
+    "final_count": 286
+  },
+  {
+    "stem": "9999972_00000_d_0000046",
+    "query": "A white SUV was parked on the roadside, with a black SUV at the top right it.",
+    "llm_prompts": [
+      "white SUV parked on roadside",
+      "black SUV in upper right corner",
+      "roadside parking scene",
+      "white vehicle near black vehicle",
+      "suv on side of road",
+      "black suv at top right",
+      "white car by black car",
+      "roadside vehicles"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 155
+  },
+  {
+    "stem": "9999972_00000_d_0000064",
+    "query": "A white SUV is parked in the parking lot,with a gray sedan at the top right.",
+    "llm_prompts": [
+      "white SUV parked",
+      "gray sedan at top right",
+      "parking lot background",
+      "suv in foreground",
+      "sedan in distance",
+      "drone view of vehicles",
+      "parking area with cars",
+      "top right corner of image"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 278
+  },
+  {
+    "stem": "9999972_00000_d_0000104",
+    "query": "A black sedan was parked on the sidewalk with a gray SUV at the bottom right and a silver van at the top left.",
+    "llm_prompts": [
+      "black sedan",
+      "gray SUV",
+      "silver van",
+      "sidewalk",
+      "parked vehicle",
+      "bottom right corner",
+      "top left corner",
+      "drone image"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 196
+  },
+  {
+    "stem": "9999973_00000_d_0000033",
+    "query": "A black sedan is parked on the parking space,with a white van below it.",
+    "llm_prompts": [
+      "black sedan",
+      "parked car",
+      "white van",
+      "underneath vehicle",
+      "parking space",
+      "automobile",
+      "motor vehicle",
+      "car parked"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "motorcycle",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 166
+  },
+  {
+    "stem": "9999973_00000_d_0000070",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 391
+  },
+  {
+    "stem": "9999973_00000_d_0000076",
+    "query": "A black sedan is parked in an open space, a white sedan at the top left.",
+    "llm_prompts": [
+      "black sedan",
+      "open space",
+      "white sedan",
+      "top left",
+      "parked vehicle",
+      "drone image",
+      "automobiles",
+      "drone photography"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 165
+  },
+  {
+    "stem": "9999974_00000_d_0000005",
+    "query": "A white sedan was parked in the parking space,with a white sedan at the bottom right.",
+    "llm_prompts": [
+      "white sedan",
+      "parked car",
+      "bottom right corner",
+      "drone image",
+      "vehicle",
+      "automobile",
+      "parking space",
+      "drone shot"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 198
+  },
+  {
+    "stem": "9999976_00000_d_0000004",
+    "query": "A white sedan is parked on the right side of the road,with a white sedan at the top left it.",
+    "llm_prompts": [
+      "white sedan on right side",
+      "white sedan at top left",
+      "road with cars",
+      "parked vehicle",
+      "sedan on road",
+      "white car on road",
+      "road with vehicles",
+      "white sedan in frame"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 72
+  },
+  {
+    "stem": "9999977_00000_d_0000038",
+    "query": "A silver sedan is driving on the right side of the road, with a yellow sedan on the left.",
+    "llm_prompts": [
+      "silver sedan on right",
+      "yellow sedan on left",
+      "road with cars",
+      "driving vehicles",
+      "right-side traffic",
+      "left-side traffic"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 190
+  },
+  {
+    "stem": "9999979_00000_d_0000046",
+    "query": "A white sedan was driving on the road with a grey sedan at the bottom left.",
+    "llm_prompts": [
+      "white sedan",
+      "grey sedan",
+      "road",
+      "bottom left",
+      "driving",
+      "vehicle",
+      "car",
+      "transport"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 104
+  },
+  {
+    "stem": "9999981_00000_d_0000063",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 100
+  },
+  {
+    "stem": "9999981_00000_d_0000075",
+    "query": "A black SUV is parked in the parking space of the residential building, with a white sedan at the bottom left and a silver sedan at the top right.",
+    "llm_prompts": [
+      "black SUV",
+      "parked",
+      "residential building",
+      "white sedan",
+      "bottom left",
+      "silver sedan",
+      "top right",
+      "parking space"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 195
+  },
+  {
+    "stem": "9999981_00000_d_0000114",
+    "query": "A white sedan is parked next to the flower bed, with a white sedan parked at the top left it.",
+    "llm_prompts": [
+      "white sedan",
+      "sedan",
+      "car",
+      "automobile",
+      "vehicle",
+      "parked car",
+      "automotive",
+      "transportation"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 174
+  },
+  {
+    "stem": "9999981_00000_d_0000131",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "gdino_base"
+    ],
+    "final_count": 593
+  },
+  {
+    "stem": "9999981_00000_d_0000151",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 118
+  },
+  {
+    "stem": "9999984_00000_d_0000044",
+    "query": "A white van was parked on the side of the road,with a brown SUV at the top right and a gray sedan at the bottom left.",
+    "llm_prompts": [
+      "white van",
+      "brown SUV",
+      "gray sedan",
+      "roadside parking",
+      "top right corner",
+      "bottom left area",
+      "parked vehicles",
+      "drone image"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 183
+  },
+  {
+    "stem": "9999984_00000_d_0000064",
+    "query": "A white truck was driving on a straight road,with a red large truck below it and a blue truck at the top right.",
+    "llm_prompts": [
+      "white truck",
+      "red large truck",
+      "blue truck",
+      "straight road",
+      "driving",
+      "top right",
+      "below",
+      "concrete objects"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 115
+  },
+  {
+    "stem": "9999984_00000_d_0000106",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 587
+  },
+  {
+    "stem": "9999986_00000_d_0000011",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 525
+  },
+  {
+    "stem": "9999993_00000_d_0000022",
+    "query": "A white sedan is parked in the middle lane of the road, with a gray van at the top right it.",
+    "llm_prompts": [
+      "white sedan",
+      "middle lane",
+      "gray van",
+      "top right",
+      "road",
+      "parked",
+      "drone image",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 243
+  },
+  {
+    "stem": "9999998_00076_d_0000061",
+    "query": "A black sedan is parked at the main entrance of the hotel, with a black sedan at the bottom right it.",
+    "llm_prompts": [
+      "black sedan",
+      "sedan car",
+      "black vehicle",
+      "automobile",
+      "car parked",
+      "sedan parked",
+      "black car",
+      "automotive"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 314
+  },
+  {
+    "stem": "9999998_00300_d_0000253",
+    "query": "A yellow van is parked in the road, with a withe sedan at the top left it.",
+    "llm_prompts": [
+      "yellow van",
+      "white sedan",
+      "road",
+      "parked vehicle",
+      "top left corner",
+      "drone image",
+      "roadway",
+      "vehicle"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "gdino_base",
+      "STOP"
+    ],
+    "final_count": 172
+  },
+  {
+    "stem": "9999998_00314_d_0000267",
+    "query": "A white SUV was parked in the car spot, with a white sedan at the bottom left.",
+    "llm_prompts": [
+      "white SUV",
+      "parked car",
+      "white sedan",
+      "bottom left",
+      "car spot",
+      "drone image",
+      "vehicle",
+      "automotive"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "STOP"
+    ],
+    "final_count": 164
+  },
+  {
+    "stem": "9999998_00357_d_0000309",
+    "query": "A white police car is driving on the right side of the road, with a silver van at the top right it.",
+    "llm_prompts": [
+      "white police car",
+      "silver van",
+      "right side of road",
+      "driving",
+      "top right corner",
+      "road"
+    ],
+    "mapped_sources": [
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "gdino_base"
+    ],
+    "final_count": 246
+  },
+  {
+    "stem": "9999999_00073_d_0000023",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "STOP",
+      "person"
+    ],
+    "final_count": 221
+  },
+  {
+    "stem": "9999999_00091_d_0000032",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 548
+  },
+  {
+    "stem": "9999999_00512_d_0000229",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 405
+  },
+  {
+    "stem": "9999999_00522_d_0000234",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "people"
+    ],
+    "final_count": 436
+  },
+  {
+    "stem": "9999999_00646_d_0000294",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "bicycle"
+    ],
+    "final_count": 276
+  },
+  {
+    "stem": "9999999_00749_d_0000342",
+    "query": "detect pedestrians, people, bicycles, cars, vans, trucks, tricycles, buses, and motorcycles in the drone traffic image",
+    "llm_prompts": [
+      "detect pedestrians",
+      "identify people",
+      "locate cyclists",
+      "spot bicycles",
+      "find cars",
+      "recognize vehicles",
+      "locate vans",
+      "identify trucks"
+    ],
+    "mapped_sources": [
+      "person",
+      "people",
+      "bicycle",
+      "bicycle",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base",
+      "gdino_base"
+    ],
+    "actions": [
+      "person",
+      "bicycle"
+    ],
+    "final_count": 388
+  }
+]

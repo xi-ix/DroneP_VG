@@ -1,0 +1,83 @@
+{
+  "method": "three-round probe using current 38+RL policy, repeated two feedback actions",
+  "device": "cuda:0",
+  "action_counts": {
+    "STOP": 0,
+    "ADD_GDINO_BASE": 1,
+    "ADD_PERSON": 113,
+    "ADD_PEOPLE": 124,
+    "ADD_GROUP_OF_PEOPLE": 0,
+    "ADD_TRICYCLE": 0,
+    "ADD_COVERED_TRICYCLE": 35,
+    "ADD_AWNING_TRICYCLE": 0,
+    "ADD_MOTORCYCLE": 15,
+    "ADD_MOTORBIKE": 0,
+    "ADD_SCOOTER": 12,
+    "ADD_BICYCLE": 0
+  },
+  "top_action_pairs": [
+    [
+      "ADD_PERSON -> ADD_PEOPLE",
+      102
+    ],
+    [
+      "ADD_MOTORCYCLE -> ADD_COVERED_TRICYCLE",
+      12
+    ],
+    [
+      "ADD_COVERED_TRICYCLE -> ADD_PEOPLE",
+      10
+    ],
+    [
+      "ADD_PERSON -> ADD_COVERED_TRICYCLE",
+      5
+    ],
+    [
+      "ADD_PEOPLE -> ADD_PERSON",
+      5
+    ],
+    [
+      "ADD_SCOOTER -> ADD_PEOPLE",
+      4
+    ],
+    [
+      "ADD_SCOOTER -> ADD_COVERED_TRICYCLE",
+      4
+    ],
+    [
+      "ADD_COVERED_TRICYCLE -> ADD_SCOOTER",
+      3
+    ],
+    [
+      "ADD_MOTORCYCLE -> ADD_PEOPLE",
+      1
+    ],
+    [
+      "ADD_MOTORCYCLE -> ADD_SCOOTER",
+      1
+    ],
+    [
+      "ADD_PERSON -> ADD_GDINO_BASE",
+      1
+    ],
+    [
+      "ADD_PEOPLE -> ADD_MOTORCYCLE",
+      1
+    ],
+    [
+      "ADD_PEOPLE -> ADD_COVERED_TRICYCLE",
+      1
+    ]
+  ],
+  "metrics": {
+    "file_count": 150.0,
+    "gt_box_count": 7973.0,
+    "prediction_box_count": 43332.0,
+    "tp_05": 4252.0,
+    "tp_075": 2632.0,
+    "acc_05": 0.5332998871190268,
+    "acc_075": 0.3301141352063213,
+    "map_05": 0.1409981181343259
+  },
+  "prediction_dir": "/home/wangzhe/DroneP_VG/38+RL_loop/outputs/predictions_three_round_probe"
+}
